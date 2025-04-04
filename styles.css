@@ -321,9 +321,33 @@ body, html {
 }
 
 .secondary-button {
-  background-color: rgb(10, 103, 202);
+  background-color: rgb(224, 64, 64);
   color: white;
   border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  .button-group {
+    flex-direction: row; /* keep side-by-side */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .primary-button, .secondary-button {
+    font-size: 14px;
+    padding: 8px 12px;
+    min-width: 140px;
+    max-width: 45%;
+    text-align: center;
+    white-space: normal; /* allow wrapping */
+  }
+
+  .secondary-button a {
+    font-size: 14px;
+    line-height: 1.4;
+    display: block;
+  }
 }
 
 /* Review Section */
