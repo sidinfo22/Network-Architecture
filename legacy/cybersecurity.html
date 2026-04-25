@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrading The Network</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!-- Background Wrapper -->
+  <div class="background-wrapper">
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+      Complete Networking Solutions by Sidiq Daniel
+    </div>
+<!-- Sticky Header -->
+<div class="sticky-header">
+  <div class="logo">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">
+      <img src="images/daters.png" alt="Logo" class="logo-image">
+    </a>
+    <a href="index.html" class="logo-text-link">Upgrading The Network</a>
+  </div>
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav class="dropdown-menu">
+    <ul>
+      <!-- Home Button -->
+      <li class="home-item">
+        <a href="index.html" class="home-link">Home</a>
+      </li>
+      <!-- Index Dropdown -->
+<li class="menu-item" onclick="toggleSubMenu()">
+    <span class="menu-title">Index <i class="arrow">&#x25BC;</i></span>
+    <ul class="sub-menu">
+        <li data-href="objectives.html">Company Objectives & Gap Analysis Overview</li>
+        <li data-href="assets.html">Assets & Inventory</li>
+        <li data-href="deploy.html">Procurement & Deployment</li>
+        <li data-href="diagrams.html">Network Diagrams & Topologies</li>
+        <li data-href="segmentation.html">Network Segmentation, VLAN'S, & Subnetting</li>
+        <li data-href="voip.html">VoIP Configuration</li>
+        <li data-href="cloud.html">Cloud Infrastructure & Software Defined Networking</li>
+        <li data-href="programming.html">Programming & API's</li>
+        <li data-href="cybersecurity.html">Cybersecurity Measures & Data Protection</li>
+        <li data-href="hippa.html">HIPPA Compliance, Regulation, & Risk</li>
+    </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+
+<section class="intro-section">
+  <div class="button-like">The Gold Standard</div>
+  <span class="star2">★ ★ ★ ★ ★</span>
+  <h1>Cybersecurity, Data Protection & HIPAA Compliance</h1>
+  <p>Securing Summit Care Medical Clinic through layered cybersecurity controls, stronger data protection practices, and HIPAA-aware compliance planning across the full environment.</p>
+
+<!-- ===============================
+     SECTION 1: INTRO & SCOPE (csec14)
+     =============================== -->
+     <section class="csec14-introSection">
+      <div class="csec14-wrapper">
+        <h2 class="titleBlue14"> Overview</h2>
+        <p class="desc14">
+          For Summit Care Medical Clinic, cybersecurity is built directly into
+          the architecture rather than added at the end. Internal staff
+          workstations, wireless access, web-facing systems, database services,
+          VPN pathways, Microsoft cloud identity, and management access are all
+          protected through layered controls designed to reduce exposure,
+          support HIPAA-aware operations, and limit what an attacker or
+          unauthorized user can reach if something is compromised.
+        </p>
+        <ul class="csec14-highlights">
+          <li><i class="fas fa-user-shield"></i> Zero-Trust enforcement with
+            strict ACLs, segmented VLANs, and separated internal versus
+            client-facing services.</li>
+          <li><i class="fas fa-key"></i> DLP controls on emails and file transfers,
+            preventing unauthorized data movement and reducing accidental data
+            leakage.</li>
+          <li><i class="fas fa-lock"></i> Layered defenses including IPS/IDS,
+            Event Viewer review, PowerShell-driven checks, SNMP monitoring, and
+            firewall/VPN controls for faster threat detection.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- ===============================
+         SECTION 2: NETWORK HARDENING (csec26)
+         =============================== -->
+    <section class="csec26-hardenSection">
+      <div class="csec26-wrapper">
+        <h2 class="titleBlack26">Network Hardening &amp; Layered Security</h2>
+        <p class="desc26">
+          Summit Care’s hardening model starts with segmentation, least
+          privilege, and strict traffic control between systems. The office
+          network separates internal staff resources, database services,
+          web-facing systems, guest access, and management paths so that no
+          single flat network exposes everything at once.
+        </p>
+        <div class="csec26-gridContainer">
+          <!-- Card 1 -->
+          <div class="csec26-card">
+            <i class="fas fa-shield-alt csec26-icon"></i>
+            <h3>Firewall Policies</h3>
+            <p>
+              Summit Care uses strict firewall rules with explicit allows for
+              approved services only. Internal resources, web-facing systems,
+              guest wireless, and VPN traffic are controlled separately, and
+              management access is limited to approved paths. Internal Windows
+              firewall settings also support host-level protection inside the
+              segmented environment.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="csec26-card">
+            <i class="fas fa-random csec26-icon"></i>
+            <h3>STP &amp; VLAN Isolation</h3>
+            <p>
+              VLAN segmentation separates internal office devices, web-facing
+              utilities, the practice database, wireless access tiers, and
+              supporting infrastructure so traffic moves only where it is
+              intended to go.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div class="csec26-card">
+            <i class="fas fa-bomb csec26-icon"></i>
+            <h3>Secondary Filtering &amp; Proxy Controls</h3>
+            <p>
+              A secondary <strong>pfSense</strong>-based firewall layer can be
+              used for additional proxy filtering and web protection, helping
+              screen malicious requests and add another inspection point around
+              exposed services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ===============================
+         SECTION 3: INTRUSION PREVENTION & IDS (csec37)
+         =============================== -->
+    <section class="csec37-ipsSection">
+      <div class="csec37-wrapper">
+        <h2 class="titleBlue37">Intrusion Prevention &amp; Detection Systems</h2>
+        <p class="desc37">
+          Preventing and detecting unauthorized access is critical to avoiding
+          ransomware, exploitation attempts, and lateral movement. Summit Care’s
+          security posture includes firewall-based inspection, IPS/IDS coverage,
+          web-facing hardening, and alerting tied into monitoring processes
+          already used by the IT team.
+        </p>
+        <div class="csec37-infoRow">
+          <!-- Left Info -->
+          <div class="csec37-box">
+            <h3><i class="fas fa-shield-virus"></i> IPS Features</h3>
+            <ul>
+              <li>Signature-based inspection for known vulnerabilities</li>
+              <li>Anomaly detection to flag unusual traffic patterns and hostile scans</li>
+              <li>Automated blocking or rate-limiting suspicious hosts</li>
+            </ul>
+          </div>
+          <!-- Right Info -->
+          <div class="csec37-box">
+            <h3><i class="fas fa-eye"></i> IDS Monitoring</h3>
+            <ul>
+              <li>Passive detection and logging of intrusion attempts</li>
+              <li>Integration with Windows logs, Event Viewer review, and monitoring workflows</li>
+              <li>Used alongside hardening on the web server to reduce malicious strings and abuse attempts such as SQL injection</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ===============================
+         SECTION 4: DATA LOSS PREVENTION (csec48)
+         =============================== -->
+    <section class="csec48-dlpSection">
+      <div class="csec48-wrapper">
+        <h2 class="titleBlack48">Data Loss Prevention (DLP)</h2>
+        <p class="desc48">
+          With PHI and financial data at stake, <strong>DLP</strong> policies are
+          treated as part of Summit Care’s operational controls, not just as a
+          software checkbox. The goal is to reduce the chance of patient or
+          office data leaving approved systems through email, file sharing,
+          removable workflows, or cloud-connected services.
+        </p>
+        <div class="csec48-dlpGrid">
+          <div class="csec48-dlpItem">
+            <h3><i class="fas fa-envelope"></i> Email Filters</h3>
+            <ul>
+              <li>Scans outgoing attachments for patient identifiers</li>
+              <li>Helps flag messages containing regulated or high-risk content</li>
+              <li>Aligned with Microsoft-connected mail and staff communication workflows</li>
+            </ul>
+          </div>
+          <div class="csec48-dlpItem">
+            <h3><i class="fas fa-upload"></i> File Transfer Enforcement</h3>
+            <ul>
+              <li>Blocks upload of sensitive data to unapproved cloud services</li>
+              <li>Tags confidential documents for <em>extra scrutiny</em></li>
+              <li>Logs and reviews attempts to move critical files outside approved paths</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ===============================
+         SECTION 5: LOGGING & SIEM INTEGRATION (csec59)
+         =============================== -->
+    <section class="csec59-loggingSection">
+      <div class="csec59-wrapper">
+        <h2 class="titleBlue59">Logging &amp; SIEM Integration</h2>
+        <p class="desc59">
+          Comprehensive <strong>audit trails</strong> and centralized logging are
+          vital for detecting threats and meeting compliance obligations. Summit
+          Care relies on device logs, Windows Event Viewer review, SNMP-based
+          monitoring, and scheduled scripting tasks so IT can see when systems
+          drift from expected behavior.
+        </p>
+        <div class="csec59-logGrid">
+          <!-- Card 1 -->
+          <div class="csec59-card">
+            <i class="fas fa-database csec59-icon"></i>
+            <h3>Central Syslog</h3>
+            <p>
+              Routers, switches, firewalls, and supporting systems generate logs
+              that can be reviewed centrally so unusual behavior is easier to
+              trace during security events.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="csec59-card">
+            <i class="fas fa-chart-line csec59-icon"></i>
+            <h3>SIEM Correlation</h3>
+            <p>
+              Event Viewer activity, SNMP alerts, firewall events, and
+              scheduled PowerShell checks all contribute to a more complete
+              operational picture when suspicious conditions appear.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div class="csec59-card">
+            <i class="fas fa-user-clock csec59-icon"></i>
+            <h3>Retention &amp; Forensics</h3>
+            <p>
+              Logs are retained per HIPAA guidelines, allowing forensic analysis
+              post-incident to pinpoint root causes, verify timelines, and
+              improve future response procedures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ===============================
+         SECTION 6: ACCESS CONTROL & UAC (csec62)
+         =============================== -->
+    <section class="csec62-accessSection">
+      <div class="csec62-wrapper">
+        <h2 class="titleBlack62">User Access Control &amp; Identity Management</h2>
+        <p class="desc62">
+          Ensuring that only the right people have the correct level of access is a
+          foundational security principle. We leverage <strong>Active Directory
+          (AD)</strong>, <strong>RADIUS</strong>, and <strong>multifactor
+          authentication (MFA)</strong> to confirm each user’s identity and grant
+          least-privilege access to relevant resources. Summit Care also benefits
+          from Microsoft Entra-based role controls, password management features,
+          and stronger visibility into account use across cloud-connected
+          services.
+        </p>
+        <ul class="csec62-highlightsList">
+          <li><i class="fas fa-user-check"></i> Organization-wide MFA across Microsoft-connected services, VPN connections, and privileged management portals</li>
+          <li><i class="fas fa-users-cog"></i> Tiered AD groups separate IT admins from general staff &amp; guest accounts</li>
+          <li><i class="fas fa-file-signature"></i> Role-Based Access Control (RBAC) for shared folders, application data, domain GPOs, and Microsoft-connected application access</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- ===============================
+         SECTION 7: REMOTE ACCESS & SSH (csec73)
+         =============================== -->
+    <section class="csec73-remoteSection">
+      <div class="csec73-wrapper">
+        <h2 class="titleBlue73">Secure Remote Access &amp; SSH Implementation</h2>
+        <p class="desc73">
+          A modern healthcare environment often requires IT personnel and medical
+          staff to connect remotely. To preserve security while supporting
+          flexibility, Summit Care uses secure VPN access, restricted management
+          paths, and standardized <em>SSH</em> practices for device and server
+          administration.
+        </p>
+        <div class="csec73-visualGraph">
+          <h3><i class="fas fa-laptop-code"></i> Remote Access Architecture</h3>
+          <div class="csec73-barTrack">
+            <div class="csec73-barFill" style="width: 65%;">
+              <span class="csec73-barText">65% Remote Workforce Usage</span>
+            </div>
+          </div>
+          <p class="desc73 subText">
+            Percentage of staff relying on remote access solutions (VPN, RDP, SSH)
+            for daily tasks, ensuring secure off-site operations.
+          </p>
+        </div>
+        <ul class="csec73-list">
+          <li><i class="fas fa-shield-alt"></i> TLS-encrypted RDP sessions with
+            gateway-based access restrictions</li>
+          <li><i class="fas fa-key"></i> SSH key-pair or certificate-based authentication for Cisco hardware and Linux virtual machines, never left openly exposed to the public internet</li>
+          <li><i class="fas fa-lock"></i> Host-based firewall rules limiting inbound
+            connections to known IP ranges</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- ===============================
+         SECTION 8: SNMP & NETWORK MONITORING (csec84)
+         =============================== -->
+    <section class="csec84-snmpSection">
+      <div class="csec84-wrapper">
+        <h2 class="titleBlack84">SNMP &amp; Network Monitoring</h2>
+        <p class="desc84">
+          <strong>Simple Network Management Protocol (SNMP)</strong> underpins
+          real-time monitoring of critical infrastructure. By capturing device
+          metrics, interface statistics, and performance counters, the Summit
+          Care IT team can proactively address outages, instability, and
+          security-related anomalies before they become larger incidents.
+        </p>
+        <div class="csec84-snmpGrid">
+          <div class="csec84-snmpCard">
+            <i class="fas fa-chart-area csec84-icon"></i>
+            <h3>SNMPv3 Deployment</h3>
+            <p>
+              Encrypted SNMP ensures that no plaintext credentials are sent over
+              the network. This mitigates eavesdropping risks inherent in older
+              SNMP versions.
+            </p>
+          </div>
+          <div class="csec84-snmpCard">
+            <i class="fas fa-exclamation-triangle csec84-icon"></i>
+            <h3>Threshold Alerts</h3>
+            <p>
+              Triggers warnings if bandwidth spikes, CPU usage goes critical,
+              interface errors increase, or monitored systems fall outside
+              expected operating thresholds, with email alerts sent to IT staff
+              and stakeholders.
+            </p>
+          </div>
+          <div class="csec84-snmpCard">
+            <i class="fas fa-clipboard-list csec84-icon"></i>
+            <h3>Historical Analysis</h3>
+            <p>
+              Logs device performance data for trending, incident review, and
+              capacity planning so the team can refine hardening and future
+              infrastructure decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ===============================
+         SECTION 9: EMAIL SECURITY & VOIP PROTECTION (csec91)
+         =============================== -->
+    <section class="csec91-mailSection">
+      <div class="csec91-wrapper">
+        <h2 class="titleBlue91">Email Security &amp; VoIP Protection</h2>
+        <p class="desc91">
+          Whether staff communicate via email or voice calls, both mediums can be
+          exploited if not secured. By combining <strong>DLP measures</strong>,
+          <em>encryption</em>, and stronger policy controls around communication
+          channels, Summit Care reduces the risk of eavesdropping, phishing, and
+          unauthorized data movement.
+        </p>
+        <div class="csec91-mailGrid">
+          <!-- Email Column -->
+          <div class="csec91-col">
+            <h3><i class="fas fa-envelope"></i> Email Gateway Protection</h3>
+            <ul>
+              <li>Anti-spam &amp; anti-phishing modules scanning incoming messages</li>
+              <li>Outbound encryption for sensitive attachments via <strong>TLS</strong></li>
+              <li>SPF, DKIM, &amp; DMARC records to validate legitimate senders and reduce spoofing risk</li>
+            </ul>
+          </div>
+          <!-- VoIP Column -->
+          <div class="csec91-col">
+            <h3><i class="fas fa-phone"></i> VoIP &amp; SIP Security</h3>
+            <ul>
+              <li>SIP trunk encryption preventing man-in-the-middle attacks</li>
+              <li>Call admission control to limit concurrent sessions and thwart floods</li>
+              <li>QoS &amp; VLAN segregation to keep voice traffic low-latency
+                and separate from data channels</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ===============================
+         SECTION 10: HIPAA COMPLIANCE & SOFTWARE REVIEW (hipmerge14)
+         =============================== -->
+    <section class="hip14-introSection">
+      <div class="hip14-wrapper">
+        <h2 class="titleBlue14">HIPAA Compliance &amp; Healthcare Relevancy</h2>
+        <p class="desc14">
+          For Summit Care Medical Clinic, cybersecurity is inseparable from
+          <strong>HIPAA compliance</strong>. Protecting patient records, office
+          workflows, and electronic PHI requires more than perimeter security alone;
+          it also requires software choices, user access, retention practices, and
+          operating procedures that support healthcare privacy and accountability.
+        </p>
+        <ul class="hip14-list">
+          <li><i class="fas fa-clipboard-check"></i> Security controls were aligned to support privacy, minimum necessary access, and responsible ePHI handling.</li>
+          <li><i class="fas fa-medkit"></i> Office systems, patient data workflows, and cloud-connected services were reviewed with regulated healthcare use in mind.</li>
+          <li><i class="fas fa-laptop"></i> Software and services were evaluated to better support HIPAA-aware administration, monitoring, and operational consistency.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===============================
+         SECTION 11: COMPLIANCE OPERATIONS & AUDIT (hipmerge26)
+         =============================== -->
+    <section class="hip68-complianceSection">
+      <div class="hip68-wrapper">
+        <h2 class="titleBlack68">Ongoing Compliance, Audit &amp; Software Review</h2>
+        <p class="desc68">
+          Summit Care’s security posture also depends on continued review. Beyond
+          initial hardening and access control, the project included reviewing
+          software and connected services for healthcare relevance, security fit,
+          and HIPAA-aware administration before they were adopted into the
+          environment.
+        </p>
+        <div class="hip68-listGrid">
+          <div class="hip68-listItem">
+            <h3><i class="fas fa-search"></i> Security Testing</h3>
+            <p>
+              Segmentation, wireless protections, firewall rules, and exposed pathways
+              were reviewed to identify weaknesses before they could turn into larger
+              operational or compliance risks.
+            </p>
+          </div>
+          <div class="hip68-listItem">
+            <h3><i class="fas fa-database"></i> Data Protection Review</h3>
+            <p>
+              Patient and office data handling was assessed through the lens of access
+              boundaries, secure transmission, controlled permissions, and safer
+              operational workflows across staff, systems, and connected services.
+            </p>
+          </div>
+          <div class="hip68-listItem">
+            <h3><i class="fas fa-file-medical-alt"></i> HIPAA-Aware Software Controls</h3>
+            <p>
+              Software and cloud-connected tools were reviewed with compliance in mind
+              so Summit Care can rely on solutions that better support privacy,
+              accountability, secure administration, and the clinic’s broader
+              regulatory expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================
+         SECTION 10: CONCLUSION & NEXT STEPS (csec99)
+         =============================== -->
+    <section class="csec99-conclusionSection">
+      <div class="csec99-wrapper">
+        <h2 class="titleBlack99">Strengthening Enterprise Security</h2>
+        <p class="desc99">
+          By combining VLAN segmentation, WPA2-Enterprise wireless, RADIUS,
+          firewall controls, pfSense proxy filtering, IPS/IDS coverage, DLP
+          safeguards, Microsoft Entra identity protections, SNMP alerting, and
+          script-driven monitoring, Summit Care operates with a far more mature
+          security posture than a basic small-office environment. These controls
+          help protect patient data, support HIPAA-aware operations, and give
+          the clinic a more resilient response posture when issues appear.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ===============================
+     SECTION 11: CONCLUSION & NEXT STEPS (csec110)
+     =============================== -->
+<section class="csec110-conclusionSection">
+  <div class="csec110-wrapper">
+    <h2 class="titleBlack110">Conclusion &amp; Next Steps</h2>
+    <p class="desc110">
+      Summit Care’s security model now ties together segmented network design,
+      identity-based wireless access, Microsoft MFA, role-based permissions,
+      DLP controls, monitored logs, SSH key-based administration, scheduled
+      PowerShell and Task Scheduler checks, and HIPAA-aware software review.
+      The next phase is <strong>Disaster Recovery &amp; Backup Plan</strong>,
+      where these protections are paired with 3-2-1 backups, recovery
+      procedures, continuity controls, and restoration readiness.
+    </p>
+    <div class="bottomBtn85-group">
+      <button class="footer-primary-button" onclick="window.location.href='voip.html';">
+        Disaster Recovery &amp; Backup Plan
+      </button>
+      <button class="footer-secondary-button" id="return-to-top">
+        Return to Top
+      </button>
+    </div>
+  </div>
+</section>
+</section>
+  <!-- Minimal, Center-Aligned Footer -->
+  <footer class="subtle-footer">
+    <p>New York, New York</p>
+    <p>Design: Sidiq Daniel &copy; All rights reserved</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

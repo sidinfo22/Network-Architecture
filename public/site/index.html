@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrading The Network</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!-- Background Wrapper -->
+  <div class="background-wrapper">
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+      Complete Networking Solutions by Sidiq Daniel
+    </div>
+<!-- Sticky Header -->
+<div class="sticky-header">
+  <div class="logo">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">
+      <img src="images/daters.png" alt="Logo" class="logo-image">
+    </a>
+    <a href="index.html" class="logo-text-link">Upgrading The Network</a>
+  </div>
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav class="dropdown-menu">
+    <ul>
+      <!-- Home Button -->
+      <li class="home-item">
+        <a href="index.html" class="home-link">Home</a>
+      </li>
+      <!-- Index Dropdown -->
+<li class="menu-item" onclick="toggleSubMenu()">
+    <span class="menu-title">Index <i class="arrow">&#x25BC;</i></span>
+    <ul class="sub-menu">
+        <li data-href="objectives.html">Company Objectives & Gap Analysis Overview</li>
+        <li data-href="assets.html">Assets & Inventory</li>
+        <li data-href="deploy.html">Procurement & Deployment</li>
+        <li data-href="diagrams.html">Network Diagrams & Topologies</li>
+        <li data-href="segmentation.html">Network Segmentation, VLAN'S, & Subnetting</li>
+        <li data-href="voip.html">VoIP Configuration</li>
+        <li data-href="cloud.html">Cloud Infrastructure & Software Defined Networking</li>
+        <li data-href="programming.html">Programming & API's</li>
+        <li data-href="cybersecurity.html">Cybersecurity Measures & Data Protection</li>
+        <li data-href="hippa.html">HIPPA Compliance, Regulation, & Risk</li>
+    </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+<section class="intro-section">
+  <div class="button-like">The Gold Standard</div>
+  <h1>Gold Standard Network Infrastructure</h1>
+  <p>Upgrading a small office network for a doctor's office to enterprise-level infrastructure.</p>
+  <div class="button-group">
+    <button class="primary-button" onclick="window.location.href='strategies.html';">View Full Report</button>
+    <button class="secondary-button">
+      <a href="diagrams.html" class="button-link">Explore Summit Care </br> Blueprint</a>
+    </button>
+  </div>
+  <div class="review-section">
+    <span class="star">★ ★ ★ ★ ★</span>
+    <p>Design, diagrams, and deployment built for a modern network upgrade.</p>
+  </div>
+  <div class="diagram-selector-container">
+    <div class="diagram-selector">
+      <div class="selector-button active" data-diagram="logical">
+        <i class="fas fa-network-wired"></i>
+        <span>Design</span>
+      </div>
+      <div class="selector-button" data-diagram="physical">
+        <i class="fas fa-server"></i>
+        <span>Diagram</span>
+      </div>
+      <div class="selector-button" data-diagram="cabling">
+        <i class="fas fa-plug"></i>
+        <span>Deploy</span>
+      </div>
+    </div>
+  </div>
+  <section class="diagram-section">
+    <img id="network-diagram" src="images/networktop.png" alt="Logical Network Diagram" class="network-diagram">
+  </section>
+</section>
+
+  <section class="project-summary-section">
+    <div class="project-summary-icon">
+      <i class="fas fa-network-wired"></i>
+    </div>
+    <h2>Discover Networking Excellence</h2>
+    <p class="project-summary-paragraph">This document introduces <strong>Summit Care Medical Clinic</strong>, a mock healthcare organization used as the foundation for a full virtual blueprint that upgrades a small doctor’s office from a basic SoHo setup into an enterprise-grade network. In this project, we step in as the head of the IT department, working alongside clinic leadership and the head doctor to define naming conventions, IP schemes, inventory standards, procurement planning, documentation expectations, and the broader technical direction of the environment.</p>
+    <p class="project-summary-paragraph">From gap analysis and research to provisioning, deployment, cloud integration, cybersecurity, compliance, and risk management, this report walks through the many responsibilities involved in building a reliable healthcare network. It also highlights how we support uptime, configuration uniformity, recovery readiness, and future scalability so Summit Care’s infrastructure can grow as one coordinated system instead of a series of disconnected fixes.</p>
+  </section>
+  
+  <div class="auto-scrolling-reel">
+    <div class="reel-container">
+      <span><i class="fas fa-award"></i> Company Objectives &amp; Gap Analysis</span>
+      <span><i class="fas fa-award"></i> Research &amp; Development</span>
+      <span><i class="fas fa-award"></i> Assets, Inventory &amp; Procurement</span>
+      <span><i class="fas fa-award"></i> Documentation, Diagrams &amp; Topologies</span>
+      <span><i class="fas fa-award"></i> Infrastructure Deployment &amp; Configurations</span>
+      <span><i class="fas fa-award"></i> Hybrid Cloud, Azure &amp; Entra Integration</span>
+      <span><i class="fas fa-award"></i> Network Segmentation, VLANs &amp; Subnetting</span>
+      <span><i class="fas fa-award"></i> Cybersecurity Measures &amp; Data Protection</span>
+      <span><i class="fas fa-award"></i> Disaster Recovery &amp; Backup Plan</span>
+      <span><i class="fas fa-award"></i> HIPAA Compliance, Regulations &amp; Risk</span>
+    </div>
+  </div>
+  <section class="cards-section">
+    <div class="card animate-card">
+      <div class="icon"><i class="fas fa-bullseye"></i></div>
+      <h3>Company Objectives & Gap Analysis</h3>
+      <p>Define Summit Care’s business goals, pain points, technical gaps, and the roadmap for transforming a small office network into an enterprise environment.</p>
+      <a href="objectives.html" class="view-more">View More</a>
+    </div>
+    <div class="card animate-card">
+      <div class="icon"><i class="fas fa-flask"></i></div>
+      <h3>Research & Development</h3>
+      <p>Capture the testing, validation, automation planning, and technical research that informed better decisions throughout the project lifecycle.</p>
+      <a href="programming.html" class="view-more">View More</a>
+    </div>
+    <div class="card animate-card">
+      <div class="icon"><i class="fas fa-boxes"></i></div>
+      <h3>Assets, Inventory & Procurement</h3>
+      <p>Organize devices, software, vendors, licensing, and purchasing decisions so the Summit Care rollout stays documented, accountable, and deployment-ready.</p>
+      <a href="assets.html" class="view-more">View More</a>
+    </div>
+    <div class="card animate-card">
+      <div class="icon"><i class="fas fa-project-diagram"></i></div>
+      <h3>Documentation, Diagrams & Topologies</h3>
+      <p>Build the technical blueprint with logical and physical diagrams, supporting documentation, and a clearer picture of how the full environment fits together.</p>
+      <a href="diagrams.html" class="view-more">View More</a>
+    </div>
+    <div class="card animate-card">
+      <div class="icon"><i class="fas fa-tools"></i></div>
+      <h3>Infrastructure Deployment & Configurations</h3>
+      <p>Standardize how Summit Care’s infrastructure is deployed, configured, and maintained so operations stay consistent and easier to support.</p>
+      <a href="deploy.html" class="view-more">View More</a>
+    </div>
+    <div class="card animate-card">
+      <div class="icon"><i class="fas fa-cloud"></i></div>
+      <h3>Hybrid Cloud Infrastructure & Scalability</h3>
+      <p>Integrate Microsoft Azure and Entra with the on-prem network to support identity, resilience, backup planning, and future growth.</p>
+      <a href="cloud.html" class="view-more">View More</a>
+    </div>
+    <div class="card animate-card">
+      <div class="icon"><i class="fas fa-network-wired"></i></div>
+      <h3>Network Segmentation, VLANs & Subnetting</h3>
+      <p>Design secure network boundaries and cleaner IP structures that separate clinical, administrative, guest, and infrastructure traffic.</p>
+      <a href="segmentation.html" class="view-more">View More</a>
+    </div>
+    <div class="card animate-card">
+      <div class="icon"><i class="fas fa-shield-alt"></i></div>
+      <h3>Cybersecurity Measures & Data Protection</h3>
+      <p>Apply layered protections across Summit Care’s systems with stronger access control, data safeguards, monitoring, and secure operational practices.</p>
+      <a href="cybersecurity.html" class="view-more">View More</a>
+    </div>
+    <div class="card animate-card">
+      <div class="icon"><i class="fas fa-life-ring"></i></div>
+      <h3>Disaster Recovery & Backup Plan</h3>
+      <p>Prepare for outages, disruptions, and restoration events with recovery planning, backup strategy, redundancy, and continuity workflows.</p>
+      <a href="voip.html" class="view-more">View More</a>
+    </div>
+    <div class="card animate-card">
+      <div class="icon"><i class="fas fa-notes-medical"></i></div>
+      <h3>HIPAA Compliance, Regulations & Risk</h3>
+      <p>Conclude with healthcare-focused policy, compliance, and future-proofing considerations that shape Summit Care’s ongoing risk posture.</p>
+      <a href="hippa.html" class="view-more">View More</a>
+    </div>
+  </section>
+
+
+ <section class="integration-section">
+  <div class="header-text">
+    <div class="tagline">Full Stack Configuration</div>
+    <h2>
+      Full Stack Configuration
+      <img src="images/integration.png" alt="Integration Icon" class="integration-icon">
+    </h2>
+    <p>For Summit Care Medical Clinic, this section highlights the major configurations we put in place across systems, network infrastructure, and cloud identity. Rather than treating the environment like separate moving parts, we configured the stack as one coordinated platform so Summit Care can benefit from cleaner operations, stronger security, better user management, and more predictable day-to-day support.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-item animated" style="animation-delay: 0.4s;">
+      <div class="icon-container"><i class="fas fa-server"></i></div>
+      <h3>Systems Configuration</h3>
+      <p>We configured Windows Server services for Active Directory, DNS, DHCP, NPS, certificate services, and RADIUS-backed authentication so Summit Care has centralized identity, address management, policy enforcement, and secure enterprise wireless access.</p>
+    </div>
+    <div class="feature-item animated" style="animation-delay: 0.6s;">
+      <div class="icon-container"><i class="fas fa-network-wired"></i></div>
+      <h3>Network Configuration</h3>
+      <p>We configured Cisco routing and switching with structured VLANs, subnetting, router-on-a-stick, segmentation, trunking, and standardized switch policies so traffic stays organized, secure, and easier to troubleshoot across the clinic.</p>
+    </div>
+    <div class="feature-item animated" style="animation-delay: 0.8s;">
+      <div class="icon-container"><i class="fas fa-cloud"></i></div>
+      <h3>Cloud Configuration</h3>
+      <p>We integrated Summit Care’s on-prem Active Directory with Microsoft Azure Entra ID using the sync agent to enable password hash sync, password writeback, SSPR, single sign-on, Microsoft 365 access, Teams provisioning, P1 licensing, and cloud-based staff management from one connected identity workflow.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="integration-section">
+  <div class="header-text">
+    <div class="tagline">Designed, Documented, and Scaled</div>
+    <h2>
+      Designed, Documented, and Scaled
+      <img src="images/integration.png" alt="Integration Icon" class="integration-icon">
+    </h2>
+    <p>Beyond configuration alone, we also approached Summit Care Medical Clinic’s environment with long-term structure in mind. We designed the architecture to support clear operational standards, documented the environment so future work could be carried out consistently, and built in room for growth so expansion would feel planned instead of reactive.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-item animated" style="animation-delay: 0.4s;">
+      <div class="icon-container"><i class="fas fa-drafting-compass"></i></div>
+      <h3>Designed for the Environment</h3>
+      <p>We designed Summit Care’s network architecture around the real needs of a growing medical office, including segmentation, wireless access, hybrid identity, infrastructure standards, and a cleaner operational layout for both staff and IT support.</p>
+    </div>
+    <div class="feature-item animated" style="animation-delay: 0.6s;">
+      <div class="icon-container"><i class="fas fa-file-alt"></i></div>
+      <h3>Documented for Consistency</h3>
+      <p>We documented configurations, addressing plans, naming conventions, topology decisions, and deployment standards so the clinic would have a usable reference point for support, troubleshooting, onboarding, and future upgrades.</p>
+    </div>
+    <div class="feature-item animated" style="animation-delay: 0.8s;">
+      <div class="icon-container"><i class="fas fa-expand-arrows-alt"></i></div>
+      <h3>Scaled for Growth</h3>
+      <p>When Summit Care added an additional office, our design and documentation made it far easier to extend the environment with consistency. Because the blueprint was already structured for growth, the clinic could scale into the new location with less friction and much better continuity.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="network-hardening-section">
+  <!-- Decorative Icon -->
+  <div class="decorative-image">
+    <i class="fas fa-shield-alt decorative-icon"></i>
+  </div>
+
+  <!-- Section Title -->
+  <h2 class="section-title">Summit Care Infrastructure Priorities</h2>
+
+  <!-- Confidentiality -->
+  <div class="cia-item">
+    <h3 class="cia-heading">
+      Patient Data Protection
+      <i class="fas fa-user-secret confidentiality-icon"></i>
+    </h3>
+    <p>
+      We designed Summit Care’s environment around protecting patient information, internal operations, and staff access with clearer boundaries, authenticated wireless access, role-based permissions, and policies that reflect how the clinic actually works day to day.
+    </p>
+  </div>
+
+  <!-- Integrity -->
+  <div class="cia-item">
+    <h3 class="cia-heading">
+      Configuration Standardization
+      <i class="fas fa-check-circle integrity-icon"></i>
+    </h3>
+    <p>
+      We supported Summit Care with cleaner configuration uniformity, stronger change control, and better documentation so systems stay consistent, supportable, and far less likely to drift through accidental or unauthorized changes.
+    </p>
+  </div>
+
+  <!-- Availability -->
+  <div class="cia-item">
+    <h3 class="cia-heading">
+      Uptime & Recovery Readiness
+      <i class="fas fa-cloud availability-icon"></i>
+    </h3>
+    <p>
+      We planned Summit Care’s uptime around failover, monitoring, backups, and recovery readiness so staff can continue reaching critical systems with less disruption and better preparedness when something goes wrong.
+    </p>
+  </div>
+</section>
+
+
+
+<section class="integration-section hybrid-cloud-section">
+  <div class="header-text">
+    <div class="tagline">Hybrid Cloud Identity</div>
+    <h2>
+      Azure Entra Integration
+      <img src="images/integration.png" alt="Integration Icon" class="integration-icon">
+    </h2>
+    <p>For Summit Care Medical Clinic, we extended the on-prem Windows environment into Microsoft Azure Entra ID so identity and access management could work efficiently across both local infrastructure and cloud services. Using the Entra sync agent, we connected on-prem Active Directory to the cloud to support password hash sync, password writeback, self-service password reset, single sign-on, Microsoft 365 access, user lifecycle management, and stronger day-to-day administration for staff accounts.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-item animated" style="animation-delay: 0.4s;">
+      <div class="icon-container"><i class="fas fa-sync-alt"></i></div>
+      <h3>Directory Synchronization</h3>
+      <p>We synchronized on-prem Active Directory with Azure Entra ID so Summit Care could maintain a connected identity model across local systems and cloud services without duplicating user administration.</p>
+    </div>
+    <div class="feature-item animated" style="animation-delay: 0.6s;">
+      <div class="icon-container"><i class="fas fa-user-cog"></i></div>
+      <h3>Cloud Identity Benefits</h3>
+      <p>Password writeback, password hash sync, SSPR, and single sign-on gave Summit Care a more efficient support workflow by enabling password resets, account management, and application access from the cloud while staying tied to the local directory.</p>
+    </div>
+    <div class="feature-item animated" style="animation-delay: 0.8s;">
+      <div class="icon-container"><i class="fas fa-users"></i></div>
+      <h3>Microsoft 365 & Teams</h3>
+      <p>We provisioned Microsoft 365 services, Microsoft Teams accounts, and Entra P1 licensing so staff could collaborate more effectively while IT retained centralized control over access, cloud apps, and user provisioning.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="aaa-section">
+  <!-- Section Header -->
+  <div class="aaa-header">
+    <h2 class="aaa-title">Summit Care Secure Access Architecture</h2>
+    <div class="aaa-icon-container">
+      <i class="fas fa-globe aaa-globe-icon"></i>
+    </div>
+    <p class="aaa-description">
+      We built Summit Care’s secure access model around Windows Server, Active Directory, and Network Policy Server so the clinic could support enterprise wireless authentication, separate staff and guest access, stronger policy enforcement, and more accountable user access across the environment.
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="aaa-cards">
+    <!-- Authentication -->
+    <div class="aaa-card">
+      <div class="aaa-icon">
+        <i class="fas fa-key"></i>
+      </div>
+      <h3>RADIUS & Enterprise Wi-Fi Authentication</h3>
+      <p>We built a RADIUS-backed authentication workflow using Windows Server, Active Directory, and NPS so staff devices can join secure enterprise wireless with identity-based access instead of shared passwords.</p>
+    </div>
+
+    <!-- Authorization -->
+    <div class="aaa-card">
+      <div class="aaa-icon">
+        <i class="fas fa-lock"></i>
+      </div>
+      <h3>Staff & Guest Access Policy Design</h3>
+      <p>Access at Summit Care was shaped around segmented staff and guest wireless, captive portal disclosures, policy-driven permissions, and safer separation between internal clinic operations and public-facing connectivity.</p>
+    </div>
+
+    <!-- Accounting -->
+    <div class="aaa-card">
+      <div class="aaa-icon">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <h3>VPN Access for Staff & IT Support</h3>
+      <p>We also supported remote staff and IT administration with secure VPN access into the office private network using solutions such as Cisco Meraki VPNs and Linux-based software VPNs, improving efficiency, remote support flexibility, and controlled access to private resources.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="integration-section compliance-section">
+  <div class="header-text">
+    <div class="tagline">Cybersecurity, Data Protection & HIPAA Compliance</div>
+    <h2>
+      Cybersecurity, Data Protection & HIPAA Compliance
+      <img src="images/integration.png" alt="Integration Icon" class="integration-icon">
+    </h2>
+    <p>For Summit Care Medical Clinic, our security work extended beyond access control into testing, data protection, and HIPAA-focused review. We assessed the network for weaknesses, reviewed how patient and office data would be protected across the environment, and evaluated software, configurations, and operational practices so the clinic could move toward a more secure and compliance-aware infrastructure.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-item animated" style="animation-delay: 0.4s;">
+      <div class="icon-container"><i class="fas fa-search"></i></div>
+      <h3>Network Testing & Security Validation</h3>
+      <p>We tested Summit Care’s network posture by reviewing segmentation, wireless security, access controls, exposed services, and configuration weaknesses so issues could be identified early and reduced before becoming operational or security risks.</p>
+    </div>
+    <div class="feature-item animated" style="animation-delay: 0.6s;">
+      <div class="icon-container"><i class="fas fa-shield-alt"></i></div>
+      <h3>Patient & Office Data Protection</h3>
+      <p>We focused on securing office records and patient data through stronger access boundaries, safer authentication workflows, improved network separation, and tighter control over which users, devices, and systems could reach sensitive information.</p>
+    </div>
+    <div class="feature-item animated" style="animation-delay: 0.8s;">
+      <div class="icon-container"><i class="fas fa-notes-medical"></i></div>
+      <h3>HIPAA-Aware Software & Compliance Review</h3>
+      <p>We reviewed Summit Care’s software stack, supporting configurations, and administrative practices with HIPAA compliance in mind so the clinic could rely on tools and workflows that better support privacy, accountability, regulated data handling, and healthcare operations.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Unique Buttons Section -->
+<div class="footer-buttons-container">
+  <div class="footer-buttons-copy">
+    <span class="footer-buttons-eyebrow">Continue Exploring</span>
+    <p>Jump into the full Summit Care report or head back to the top of the page to keep navigating the project.</p>
+  </div>
+  <button class="footer-primary-button" onclick="window.location.href='objectives.html';">
+    View Full Report
+  </button>
+  <button class="footer-secondary-button" id="return-to-top">
+    <span class="button-icon"><i class="fas fa-arrow-up"></i></span>
+    <span>Return to Top</span>
+  </button>
+</div>
+
+
+
+
+<!-- Contact -->
+<article id="contact" class="wrapper style4">
+	<div class="container medium">
+		<header>
+			<h2>Let's Connect!</h2>
+			<p>I’m always open to new opportunities, collaborations, and projects. Drop me a message, and let’s connect!</p>
+		</header>
+		<div class="contact-footer-grid">
+			<section class="contact-panel">
+				<h3>Send a Message</h3>
+				<form method="post" action="#">
+					<div class="row">
+						<div class="col-6 col-12-small">
+							<input type="text" name="name" id="name" placeholder="Name" />
+						</div>
+						<div class="col-6 col-12-small">
+							<input type="email" name="email" id="email" placeholder="Email" />
+						</div>
+						<div class="col-12">
+							<input type="text" name="subject" id="subject" placeholder="Subject" />
+						</div>
+						<div class="col-12">
+							<textarea name="message" id="message" placeholder="Message"></textarea>
+						</div>
+						<div class="col-12">
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="contact-submit-button" /></li>
+								<li><input type="reset" value="Clear Form" class="alt" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+				<div class="footer-social-block footer-social-inline">
+					<hr />
+					<h3>Find me on ...</h3>
+					<ul class="social">
+						<li><a href="https://softwarebysid.org" class="custom-portfolio-link" target="_blank" rel="noopener noreferrer" aria-label="SoftwareBySid portfolio"><img src="images/daters.png" alt="" class="social-custom-icon"></a></li>
+						<li><a href="https://github.com/sidinfo22" class="icon brands fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/sidiq-d-ba768324a/" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</div>
+			</section>
+			<aside class="quick-links-container">
+				<h3>Quick Navigation</h3>
+				<div class="quick-links">
+					<a href="objectives.html">Company Objectives & Gap Analysis</a>
+					<a href="programming.html">Research & Development</a>
+					<a href="assets.html">Assets, Inventory & Procurement</a>
+					<a href="diagrams.html">Documentation, Diagrams & Topologies</a>
+					<a href="deploy.html">Infrastructure Deployment & Configurations</a>
+					<a href="cloud.html">Hybrid Cloud Infrastructure & Scalability</a>
+					<a href="segmentation.html">Network Segmentation, VLANs & Subnetting</a>
+					<a href="cybersecurity.html">Cybersecurity, Data Protection & HIPAA Compliance</a>
+					<a href="voip.html">Disaster Recovery & Backup Plan</a>
+					<a href="#" class="quick-links-return-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;">Return to Top</a>
+				</div>
+			</aside>
+		</div>
+		<footer>
+			<p>
+				<a href="mailto:Sidinfo21@gmail.com" class="email-link">
+					<i class="fas fa-envelope icon"></i> Sidinfo21@gmail.com
+				</a>
+				<span> | </span> 
+				<a href="tel:+15163686457" class="phone-link">
+					<i class="fas fa-phone"></i> (516) 368-6457
+				</a>
+				<br>
+				New York, New York <br>
+				Design: Sidiq Daniel &copy; All rights reserved<br>
+			</p>
+		</footer>
+	</div>
+	<!-- Thank You Pop-Up Modal -->
+<div id="thankYouModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p>Thank you! Your message has been sent.</p>
+    </div>
+</div>
+</article>
+  <script src="script.js" defer></script>
+</body>
+</html>

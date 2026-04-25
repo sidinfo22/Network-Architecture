@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrading The Network</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!-- Background Wrapper -->
+  <div class="background-wrapper">
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+      Complete Networking Solutions by Sidiq Daniel
+    </div>
+<!-- Sticky Header -->
+<div class="sticky-header">
+  <div class="logo">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">
+      <img src="images/daters.png" alt="Logo" class="logo-image">
+    </a>
+    <a href="index.html" class="logo-text-link">Upgrading The Network</a>
+  </div>
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav class="dropdown-menu">
+    <ul>
+      <!-- Home Button -->
+      <li class="home-item">
+        <a href="index.html" class="home-link">Home</a>
+      </li>
+      <!-- Index Dropdown -->
+<li class="menu-item" onclick="toggleSubMenu()">
+    <span class="menu-title">Index <i class="arrow">&#x25BC;</i></span>
+    <ul class="sub-menu">
+        <li data-href="objectives.html">Company Objectives & Gap Analysis Overview</li>
+        <li data-href="assets.html">Assets & Inventory</li>
+        <li data-href="deploy.html">Procurement & Deployment</li>
+        <li data-href="diagrams.html">Network Diagrams & Topologies</li>
+        <li data-href="segmentation.html">Network Segmentation, VLAN'S, & Subnetting</li>
+        <li data-href="voip.html">VoIP Configuration</li>
+        <li data-href="cloud.html">Cloud Infrastructure & Software Defined Networking</li>
+        <li data-href="programming.html">Programming & API's</li>
+        <li data-href="cybersecurity.html">Cybersecurity Measures & Data Protection</li>
+        <li data-href="hippa.html">HIPPA Compliance, Regulation, & Risk</li>
+    </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+<section class="intro-section">
+  <div class="button-like">The Gold Standard</div>
+  <span class="star2">★ ★ ★ ★ ★</span>
+  <h1>Documentation, Diagrams & Topologies</h1>
+  <p>Presenting the visual and written blueprint for Summit Care Medical Clinic’s network layout, documentation standards, and scalable infrastructure design.</p>
+
+
+
+<!-- =======================
+     DOCUMENTATION INTRO SECTION 86
+     ======================= -->
+<section class="diagramIntro86-section">
+  <div class="section86-wrapper">
+    <h2 class="titleBlue86">Documentation Standards &amp; Repository Overview</h2>
+    <p class="desc86">
+      Before diagrams become useful, they need to live inside a documentation
+      system that is organized, named consistently, and backed up properly.
+      For Summit Care Medical Clinic, this page captures the documentation
+      standards, naming structures, repository approach, and diagram families
+      that support the upgraded network architecture from planning through
+      long-term operations.
+    </p>
+    <p class="desc86">
+      Our documentation is maintained in a shared Office Drive location for
+      working access, copied into an internal office repository for local
+      availability, and backed up to a NAS for additional resilience. That
+      gives the project a practical multi-location documentation workflow so
+      diagrams, topology files, inventories, IP plans, passwords, and support
+      references are not tied to a single location.
+    </p>
+  </div>
+</section>
+
+<!-- =======================
+     DOCUMENTATION STANDARDS 86
+     ======================= -->
+<section class="wired86-section">
+  <div class="section86-wrapper">
+    <h2 class="titlePurple86">Documentation Standards &amp; Source of Truth</h2>
+    <p class="desc86">
+      Good architecture depends on good documentation. For Summit Care, the
+      documentation set is meant to describe what exists, how it is named,
+      where it is located, what role it serves, and how it connects to the
+      rest of the environment. This includes asset inventory spreadsheets,
+      hostname standards, IP addressing plans, VLAN assignments, virtual
+      machine roles, password storage guidance, server records, and diagram
+      files that can be referenced by IT staff over time.
+    </p>
+    <div class="cards47-row">
+      <div class="cards47-item">
+        <div class="cards47-icon">
+          <i class="fas fa-folder-open"></i>
+        </div>
+        <h3>Central Repository</h3>
+        <p>
+          Working documentation is stored in a shared Office Drive so the team
+          can access inventories, diagrams, standards, and topology references
+          from one known location during planning and support.
+        </p>
+      </div>
+      <div class="cards47-item">
+        <div class="cards47-icon">
+          <i class="fas fa-copy"></i>
+        </div>
+        <h3>Redundant Copies</h3>
+        <p>
+          The same documentation set is also preserved in an internal office
+          repository and copied to a NAS so critical design information is not
+          lost if one location becomes unavailable.
+        </p>
+      </div>
+      <div class="cards47-item">
+        <div class="cards47-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <h3>Operational Standards</h3>
+        <p>
+          The documentation set includes naming conventions, IP planning,
+          device purpose, virtual machine roles, asset identifiers, password
+          management guidance, SSH management notes, certificate-backed RADIUS
+          references, and policy records so the environment remains supportable.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =======================
+     NAMING & DOCUMENTATION STRUCTURE 86
+     ======================= -->
+<section class="logical86-section">
+  <div class="section86-wrapper">
+    <h2 class="titleBlue86">Naming Structures, Hostnames &amp; Recorded Standards</h2>
+    <p class="desc86">
+      A consistent naming structure keeps assets, servers, user accounts, and
+      diagrams understandable at a glance. For Summit Care Medical Clinic, the
+      documentation set begins with the <strong>SCMC</strong> prefix so that
+      workstations, network devices, virtual machines, and infrastructure
+      records all follow one recognizable standard.
+    </p>
+    <div class="table47-responsive">
+      <table class="table47-assign">
+        <thead>
+          <tr>
+            <th>Asset Type</th>
+            <th>Naming Standard</th>
+            <th>Example</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Desktop PCs</td>
+            <td>SCMC-PC-###</td>
+            <td>SCMC-PC-001</td>
+            <td>Standard office workstation naming</td>
+          </tr>
+          <tr>
+            <td>Routers</td>
+            <td>SCMC-RT-###</td>
+            <td>SCMC-RT-001</td>
+            <td>Core routing and WAN edge identification</td>
+          </tr>
+          <tr>
+            <td>Switches</td>
+            <td>SCMC-SW-###</td>
+            <td>SCMC-SW-001</td>
+            <td>Layered switch and closet identification</td>
+          </tr>
+          <tr>
+            <td>Access Points</td>
+            <td>SCMC-AP-###</td>
+            <td>SCMC-AP-001</td>
+            <td>Wireless placement and support tracking</td>
+          </tr>
+          <tr>
+            <td>Domain Controller VM</td>
+            <td>SCMC-DC-###</td>
+            <td>SCMC-DC-001</td>
+            <td>Active Directory and identity services</td>
+          </tr>
+          <tr>
+            <td>VPN VM</td>
+            <td>SCMC-VPN-##</td>
+            <td>SCMC-VPN-01</td>
+            <td>Linux-based remote access services</td>
+          </tr>
+          <tr>
+            <td>User Accounts</td>
+            <td>First Initial + Last Name</td>
+            <td>sdaniel / acooper</td>
+            <td>Active Directory user naming consistency</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="logical86-points">
+      <li>
+        <i class="fas fa-network-wired"></i>
+        <strong>Hostname, IP, VLAN &amp; Subnet Records</strong> are documented so the team knows where devices live and what networks they belong to.
+      </li>
+      <li>
+        <i class="fas fa-server"></i>
+        <strong>Server Role Records</strong> identify what each Windows or Linux system does, what services it hosts, and how it connects to the environment.
+      </li>
+      <li>
+        <i class="fas fa-key"></i>
+        <strong>Password Management</strong> is organized through a password manager such as Bitwarden, protected with a master password and controlled access.
+      </li>
+      <li>
+        <i class="fas fa-certificate"></i>
+        <strong>Security Configuration Records</strong> include group policy notes, SSH standards, VPN references, and certificate-based RADIUS settings so deployment and support decisions are documented clearly.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- =======================
+     DIAGRAM OVERVIEW 86
+     ======================= -->
+<section class="wan86-section">
+  <div class="section86-wrapper">
+    <h2 class="titlePurple86">Diagram Categories &amp; Topology Planning</h2>
+    <p class="desc86">
+      Once the documentation standards are defined, the next layer is visual
+      documentation. Summit Care’s diagrams are organized by function so
+      physical layouts, logical network design, virtual systems, remote
+      access, and hybrid cloud integrations can each be understood without
+      forcing everything into one crowded view.
+    </p>
+    <div class="inventory47-cards">
+      <div class="inventory47-card">
+        <i class="fas fa-project-diagram inv47-icon"></i>
+        <h3>Physical Infrastructure</h3>
+        <p>
+          Diagrams covering racks, wall drops, cabling paths, switch uplinks,
+          desk connections, VoIP passthrough, and physical device placement.
+        </p>
+      </div>
+      <div class="inventory47-card">
+        <i class="fas fa-sitemap inv47-icon"></i>
+        <h3>Logical &amp; Segmentation Views</h3>
+        <p>
+          Diagrams covering VLANs, subnets, host relationships, security
+          zones, IP schemes, and the logical movement of traffic.
+        </p>
+      </div>
+      <div class="inventory47-card">
+        <i class="fas fa-cubes inv47-icon"></i>
+        <h3>Virtual &amp; Hybrid Architecture</h3>
+        <p>
+          Diagrams showing Proxmox virtual machines, domain services, VPN
+          placement, Microsoft cloud integration, and remote identity flows.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =======================
+     DIAGRAM PLACEHOLDER GALLERY 86
+     ======================= -->
+<section class="security86-section">
+  <div class="section86-wrapper">
+    <h2 class="titleBlue86">Documentation Views &amp; Expandable Diagram Placeholders</h2>
+    <p class="desc86">
+      The following placeholders represent the major diagram groups planned for
+      Summit Care. They are organized so physical, logical, virtual, remote
+      access, and cloud integration views can each be expanded and reviewed
+      individually once the final artwork and exports are added.
+    </p>
+    <div class="diagram86-grid">
+      <button class="diagram86-placeholder" type="button" data-diagram-title="Physical Layout & Cabling" data-diagram-copy="Shows wall jacks, switch uplinks, rack placement, VoIP-to-PC passthrough, workstation drops, and the physical path from ISP handoff into the local network.">
+        <span class="diagram86-placeholder-icon"><i class="fas fa-network-wired"></i></span>
+        <span class="diagram86-placeholder-title">Physical Layout &amp; Cabling</span>
+        <span class="diagram86-placeholder-copy">Server rack, wall drops, Ethernet runs, VoIP phone-to-PC connections, and closet layout.</span>
+        <span class="diagram86-placeholder-link">Expand Placeholder</span>
+      </button>
+      <button class="diagram86-placeholder" type="button" data-diagram-title="Logical Topology & IP Scheme" data-diagram-copy="Shows hostnames, subnet structure, VLAN relationships, IP address ranges, server roles, and how traffic is logically segmented across Summit Care.">
+        <span class="diagram86-placeholder-icon"><i class="fas fa-sitemap"></i></span>
+        <span class="diagram86-placeholder-title">Logical Topology &amp; IP Scheme</span>
+        <span class="diagram86-placeholder-copy">VLANs, subnets, server roles, hostname references, and internal traffic structure.</span>
+        <span class="diagram86-placeholder-link">Expand Placeholder</span>
+      </button>
+      <button class="diagram86-placeholder" type="button" data-diagram-title="Virtual Infrastructure Layout" data-diagram-copy="Shows Proxmox, Windows Server virtual machines, Linux VPN placement, service roles, and how the virtual environment supports the physical office network.">
+        <span class="diagram86-placeholder-icon"><i class="fas fa-cubes"></i></span>
+        <span class="diagram86-placeholder-title">Virtual Infrastructure Layout</span>
+        <span class="diagram86-placeholder-copy">Proxmox host, domain controller VM, VPN VM, and service placement across virtual systems.</span>
+        <span class="diagram86-placeholder-link">Expand Placeholder</span>
+      </button>
+      <button class="diagram86-placeholder" type="button" data-diagram-title="Remote Access & VPN Flow" data-diagram-copy="Shows remote users, firewall VPN access, Linux-based VPN access, secure entry into internal resources, and the path from outside endpoints into protected office systems.">
+        <span class="diagram86-placeholder-icon"><i class="fas fa-shield-alt"></i></span>
+        <span class="diagram86-placeholder-title">Remote Access &amp; VPN Flow</span>
+        <span class="diagram86-placeholder-copy">External staff access, dual VPN paths, and protected entry into private resources.</span>
+        <span class="diagram86-placeholder-link">Expand Placeholder</span>
+      </button>
+      <button class="diagram86-placeholder" type="button" data-diagram-title="Hybrid Cloud Identity Diagram" data-diagram-copy="Shows on-prem Active Directory, Microsoft Entra ID, synchronization paths, SSO relationships, and how Summit Care’s cloud identity integrates with the local environment.">
+        <span class="diagram86-placeholder-icon"><i class="fas fa-cloud"></i></span>
+        <span class="diagram86-placeholder-title">Hybrid Cloud Identity Diagram</span>
+        <span class="diagram86-placeholder-copy">On-prem Active Directory, Microsoft Entra ID, sync flow, SSO, and cloud service access.</span>
+        <span class="diagram86-placeholder-link">Expand Placeholder</span>
+      </button>
+      <button class="diagram86-placeholder" type="button" data-diagram-title="Segmentation & Security Zones" data-diagram-copy="Shows guest, staff, server, and protected subnets; firewall boundaries; and the segmentation model supporting compliance, least privilege, and safer traffic separation.">
+        <span class="diagram86-placeholder-icon"><i class="fas fa-layer-group"></i></span>
+        <span class="diagram86-placeholder-title">Segmentation &amp; Security Zones</span>
+        <span class="diagram86-placeholder-copy">Protected subnets, security boundaries, and traffic separation between internal services.</span>
+        <span class="diagram86-placeholder-link">Expand Placeholder</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- =======================
+     DIAGRAM GUIDANCE 86
+     ======================= -->
+<section class="cloud86-section">
+  <div class="section86-wrapper">
+    <h2 class="titlePurple86">What The Diagram Set Captures</h2>
+    <p class="desc86">
+      Together, the documentation and diagram set captures how Summit Care’s
+      environment is named, stored, connected, segmented, and supported. That
+      means the project documentation does not stop at pretty pictures. It
+      includes hostnames, IP plans, virtual machine records, asset references,
+      password-management expectations, support pathways, and the topology
+      views needed to understand both the physical office and the virtual
+      systems behind it.
+    </p>
+    <ul class="cloud86-points">
+      <li>
+        <i class="fas fa-file-alt"></i> 
+        <strong>Documentation</strong> explains what exists, how it is named, and where it is stored.
+      </li>
+      <li>
+        <i class="fas fa-map-marked-alt"></i>
+        <strong>Diagrams</strong> show how systems connect physically, logically, virtually, and remotely.
+      </li>
+      <li>
+        <i class="fas fa-search"></i>
+        <strong>Topology Views</strong> make it easier to troubleshoot, scale, secure, and hand off the environment.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- =======================
+     CONCLUSION & NEXT STEPS 86
+     ======================= -->
+<section class="conclusion86-section">
+  <div class="section86-wrapper">
+    <h2 class="titleBlue86">Bringing It All Together</h2>
+    <p class="desc86">
+      With this documentation set, Summit Care gains more than diagrams alone.
+      It gains a usable architecture record that ties together asset naming,
+      hostnames, IP planning, virtualization, remote access, hybrid identity,
+      and physical infrastructure references in one organized system. The next
+      step is to move into
+      <strong>Infrastructure Deployment &amp; Configurations</strong>, where the
+      documented standards on this page translate into the actual setup of
+      user devices, servers, networking hardware, VPN services, and supporting
+      software configurations.
+    </p>
+    <!-- Buttons at the bottom -->
+    <div class="bottomBtn86-group">
+      <button class="footer-primary-button" onclick="window.location.href='deploy.html';">
+        Infrastructure Deployment & Configurations
+      </button>
+      <button class="footer-secondary-button" id="return-to-top">
+        Return to Home
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="diagram86-modal" id="diagram86-modal" aria-hidden="true">
+  <div class="diagram86-modal-backdrop" data-close-diagram="true"></div>
+  <div class="diagram86-modal-panel" role="dialog" aria-modal="true" aria-labelledby="diagram86-modal-title">
+    <button class="diagram86-modal-close" type="button" id="diagram86-modal-close" aria-label="Close diagram preview">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="diagram86-modal-icon">
+      <i class="fas fa-project-diagram"></i>
+    </div>
+    <h3 id="diagram86-modal-title">Diagram Placeholder</h3>
+    <p id="diagram86-modal-copy">
+      Placeholder preview for future diagram uploads.
+    </p>
+  </div>
+</div>
+</section>
+  <!-- Minimal, Center-Aligned Footer -->
+  <footer class="subtle-footer">
+    <p>New York, New York</p>
+    <p>Design: Sidiq Daniel &copy; All rights reserved</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+html,
+body,
+#root {
+  min-height: 100%;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+body {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+.react-report-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.react-report-page .background-wrapper {
+  min-height: 100vh;
+  overflow-x: hidden;
+}

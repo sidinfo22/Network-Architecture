@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrading The Network</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<div class="background-wrapper">
+      <div class="notification-bar">
+        Complete Networking Solutions by Sidiq Daniel
+      </div>
+
+      <div class="sticky-header">
+        <div class="logo">
+          <a href="index.html" target="_blank" rel="noopener noreferrer">
+            <img src="images/daters.png" alt="Logo" class="logo-image" />
+          </a>
+          <a href="index.html" class="logo-text-link">Upgrading The Network</a>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="dropdown-menu">
+          <ul>
+            <li class="home-item">
+              <a href="index.html" class="home-link">Home</a>
+            </li>
+            <li class="menu-item" onclick="toggleSubMenu()">
+              <span class="menu-title">Index <i class="arrow">&#x25BC;</i></span>
+              <ul class="sub-menu">
+                <li data-href="objectives.html">Company Objectives & Gap Analysis Overview</li>
+                <li data-href="assets.html">Assets & Inventory</li>
+                <li data-href="deploy.html">Procurement & Deployment</li>
+                <li data-href="diagrams.html">Network Diagrams & Topologies</li>
+                <li data-href="segmentation.html">Network Segmentation, VLAN'S, & Subnetting</li>
+                <li data-href="voip.html">VoIP Configuration</li>
+                <li data-href="cloud.html">Cloud Infrastructure & Software Defined Networking</li>
+                <li data-href="programming.html">Programming & API's</li>
+                <li data-href="cybersecurity.html">Cybersecurity Measures & Data Protection</li>
+                <li data-href="hippa.html">HIPPA Compliance, Regulation, & Risk</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="intro-section">
+        <div class="button-like">The Gold Standard</div>
+        <span class="star2">★ ★ ★ ★ ★</span>
+        <h1>Hybrid Cloud Infrastructure & Scalability</h1>
+        <p>
+          Extending Summit Care Medical Clinic’s on-prem environment into a hybrid
+          Microsoft ecosystem with Entra synchronization, stronger identity
+          management, better application access, improved compliance support, and a
+          cleaner path for future growth.
+        </p>
+
+        <section class="cl10-introSection">
+          <div class="cl10-wrapper">
+            <h2 class="titleBlue10">Cloud Strategy</h2>
+            <p class="desc10">
+              Summit Care’s cloud strategy is built around hybrid identity and
+              Microsoft integration, not generic cloud theory. The goal was to keep
+              the clinic’s core server environment on-prem while extending users,
+              authentication, and Microsoft services into the cloud so staff can
+              work more efficiently and IT can manage accounts, applications, and
+              access from one connected identity system.
+            </p>
+            <ul class="cl10-featureList">
+              <li>
+                <i class="fas fa-user-lock"></i>
+                <strong>Single Sign-On</strong> ties local and Microsoft services to one
+                consistent identity experience.
+              </li>
+              <li>
+                <i class="fas fa-shield-alt"></i>
+                <strong>HIPAA-Aware Security</strong> is strengthened through MFA,
+                centralized identity controls, and clearer administrative visibility.
+              </li>
+              <li>
+                <i class="fas fa-users-cog"></i>
+                <strong>Operational Efficiency</strong> improves because user accounts,
+                licensing, and Microsoft applications can be managed from one
+                connected platform.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cl23-whyAzureSection">
+          <div class="cl23-wrapper">
+            <h2 class="titleBlack23">Why Microsoft Azure & Entra?</h2>
+            <p class="desc23">
+              Summit Care needed a Microsoft-centered environment that could align
+              with local Active Directory and improve the day-to-day user
+              experience. Microsoft Azure and Entra were the best fit because they
+              supported password hash sync, password writeback, self-service
+              password reset, single sign-on, multifactor authentication, and
+              tighter integration with Teams, OneDrive, and the rest of the
+              Microsoft application stack.
+            </p>
+            <div class="cl23-grid">
+              <div class="cl23-card">
+                <i class="fas fa-key cl23-icon"></i>
+                <h3>Identity Features That Matter</h3>
+                <p>
+                  Password hash sync, password writeback, SSPR, and MFA are not
+                  abstract features here. They directly improve how Summit Care
+                  handles account access, resets, and daily user support.
+                </p>
+              </div>
+              <div class="cl23-card">
+                <i class="fas fa-cloud cl23-icon"></i>
+                <h3>Better Microsoft Integration</h3>
+                <p>
+                  Users can move more cleanly into Microsoft 365, Teams, OneDrive,
+                  and related services because their identities are tied back to
+                  the same hybrid environment.
+                </p>
+              </div>
+              <div class="cl23-card">
+                <i class="fas fa-user-cog cl23-icon"></i>
+                <h3>Administrative Value</h3>
+                <p>
+                  IT can see users in the cloud, apply role-based access, manage
+                  licensing, and reset passwords while still keeping the local
+                  domain as the operational foundation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cl37-architectureSection">
+          <div class="cl37-wrapper">
+            <h2 class="titleBlue37">Migration Steps & Hybrid Identity Rollout</h2>
+            <p class="desc37">
+              The hybrid rollout was approached in a practical order so the local
+              environment and the cloud identity environment would behave as one
+              connected system rather than two separate directories.
+            </p>
+            <div class="cl37-architectureGrid">
+              <div class="cl37-archItem">
+                <i class="fas fa-download cl37-archIcon"></i>
+                <h3>Install Entra Connect</h3>
+                <p>
+                  Microsoft Entra Connect was installed on the domain controller so
+                  the clinic could establish the synchronization relationship
+                  between on-prem Active Directory and the cloud tenant.
+                </p>
+              </div>
+              <div class="cl37-archItem">
+                <i class="fas fa-id-card cl37-archIcon"></i>
+                <h3>Align The UPN</h3>
+                <p>
+                  The local domain trust UPN was adjusted to match the cloud
+                  identity format so staff could keep one recognizable sign-in
+                  experience across local and Microsoft services.
+                </p>
+              </div>
+              <div class="cl37-archItem">
+                <i class="fas fa-sync-alt cl37-archIcon"></i>
+                <h3>Enable Ongoing Sync</h3>
+                <p>
+                  Once synchronization was established, users, identity changes,
+                  and account data could be reflected between the local
+                  environment and the cloud on an ongoing basis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sdnTheory141-section">
+          <div class="sdnTheory141-wrapper">
+            <h2 class="titleBlue141">What Was Actually Deployed For Summit Care</h2>
+            <p class="desc141">
+              Summit Care did not deploy a separate Azure virtual machine stack as
+              the primary model for this phase. Instead, the clinic used a
+              <strong>hybrid sync approach</strong> that keeps the server
+              environment local while extending identity, Microsoft applications,
+              and administrative visibility into the cloud.
+            </p>
+            <p class="desc141">
+              That means the clinic still benefits from on-prem control, but now
+              gains cloud-side user visibility, cleaner Microsoft application
+              provisioning, and stronger account management features without
+              forcing a full cloud migration before it is necessary.
+            </p>
+            <div class="sdnTheory141-architecture">
+              <h3 class="sdnTheory141-subtitle">Services & Features In Use</h3>
+              <ul class="sdnTheory141-list">
+                <li>
+                  <i class="fas fa-sign-in-alt sdnTheory141-icon"></i>
+                  <strong>Single Sign-On:</strong> staff can sign in more consistently
+                  across local and Microsoft services.
+                </li>
+                <li>
+                  <i class="fas fa-key sdnTheory141-icon"></i>
+                  <strong>Password Features:</strong> password hash sync, password
+                  writeback, and SSPR improve account recovery and day-to-day support.
+                </li>
+                <li>
+                  <i class="fas fa-mobile-alt sdnTheory141-icon"></i>
+                  <strong>Multifactor Authentication:</strong> MFA is pushed
+                  organization-wide to improve security and strengthen HIPAA-aware
+                  access controls.
+                </li>
+                <li>
+                  <i class="fas fa-cloud-upload-alt sdnTheory141-icon"></i>
+                  <strong>Microsoft App Integration:</strong> Teams, OneDrive, and
+                  related services are tied more directly into the staff identity
+                  lifecycle.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="sdnApp228-section">
+          <div class="sdnApp228-wrapper">
+            <h2 class="titlePurple228">Operational Benefits For Summit Care</h2>
+            <p class="desc228">
+              The hybrid environment improved how Summit Care works in practice,
+              not just how it looks on paper. Once users were visible in the
+              cloud and the sign-in model was aligned, Microsoft services became
+              easier to deploy and support across the clinic.
+            </p>
+
+            <div class="sdnApp228-subsection">
+              <h3 class="sdnApp228-subtitle">Unified Sign-In Experience</h3>
+              <p>
+                Because the UPN was aligned between local and cloud identity,
+                users can sign in with the same identity format across local and
+                Microsoft-connected services, reducing friction and confusion.
+              </p>
+            </div>
+
+            <div class="sdnApp228-subsection">
+              <h3 class="sdnApp228-subtitle">Teams, OneDrive & Microsoft Apps</h3>
+              <p>
+                With the hybrid model in place, Microsoft Teams, OneDrive, and
+                other services are easier to provision and use. Staff can open
+                Microsoft applications with a more seamless sign-in experience,
+                and those applications tie back to the same synchronized user
+                identity.
+              </p>
+            </div>
+
+            <div class="sdnApp228-subsection">
+              <h3 class="sdnApp228-subtitle">Cloud-Based User Management</h3>
+              <p>
+                IT gains the ability to see users in the cloud, assign licenses,
+                apply access rules, and reset passwords while preserving the value
+                of the on-prem directory that still supports the local office
+                network.
+              </p>
+            </div>
+
+            <div class="sdnApp228-tableWrapper">
+              <table class="sdnApp228-benefitsTable">
+                <thead>
+                  <tr>
+                    <th>Hybrid Benefit</th>
+                    <th>What It Enables</th>
+                    <th>Operational Impact</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>SSO + Shared Identity</td>
+                    <td>One identity model across local and Microsoft services</td>
+                    <td>Less user confusion and cleaner onboarding</td>
+                  </tr>
+                  <tr>
+                    <td>Password Features</td>
+                    <td>SSPR, writeback, and sync-based credential management</td>
+                    <td>Faster recovery and less helpdesk friction</td>
+                  </tr>
+                  <tr>
+                    <td>MFA Enforcement</td>
+                    <td>Organization-wide stronger sign-in controls</td>
+                    <td>Better HIPAA-aware access security</td>
+                  </tr>
+                  <tr>
+                    <td>Cloud Visibility</td>
+                    <td>User, license, and sync visibility from the Microsoft side</td>
+                    <td>Easier administration and future scalability</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="sdnSecurity379-section">
+          <div class="sdnSecurity379-wrapper">
+            <h2 class="titleBlue379">Security & HIPAA Value In The Hybrid Model</h2>
+            <p class="desc379">
+              Summit Care’s hybrid identity design also contributes directly to
+              its security and compliance posture. Because authentication, user
+              visibility, and cloud app access can be controlled through the
+              Microsoft side of the environment, the clinic gains better control
+              over how accounts are protected and how access is managed.
+            </p>
+            <div class="sdnSecurity379-grid">
+              <div class="sdnSecurity379-card">
+                <i class="fas fa-user-lock sdnSecurity379-icon"></i>
+                <h3>Multifactor Authentication</h3>
+                <p>
+                  Organization-wide MFA reduces reliance on password-only access
+                  and provides a stronger sign-in standard for users accessing
+                  Microsoft-connected services.
+                </p>
+              </div>
+              <div class="sdnSecurity379-card">
+                <i class="fas fa-user-shield sdnSecurity379-icon"></i>
+                <h3>Role-Based Access</h3>
+                <p>
+                  Entra roles, cloud-side visibility, and controlled licensing
+                  assignments make it easier to align access with staff function
+                  and operational need.
+                </p>
+              </div>
+              <div class="sdnSecurity379-card">
+                <i class="fas fa-file-alt sdnSecurity379-icon"></i>
+                <h3>HIPAA-Aware Administration</h3>
+                <p>
+                  Better authentication controls, password reset visibility, and
+                  centralized identity management support more accountable and
+                  privacy-aware operations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cl46-scaleSection">
+          <div class="cl46-wrapper">
+            <h2 class="titlePurple46">Cloud Monitoring, Sync Health & Future Options</h2>
+            <p class="desc46">
+              Even though Summit Care did not deploy a full Azure VM stack in
+              this phase, the hybrid model still benefits from monitoring,
+              scalability, and future planning. Sync health matters, licensing
+              matters, and cloud-connected service visibility matters because
+              those systems are now part of everyday operations.
+            </p>
+            <div class="cl46-scaleCards">
+              <div class="cl46-card">
+                <i class="fas fa-user-plus cl46-icon"></i>
+                <h3>User Scalability</h3>
+                <p>
+                  As Summit Care grows, users can be added, licensed, and managed
+                  through the same hybrid structure without rebuilding the identity
+                  model from scratch.
+                </p>
+              </div>
+              <div class="cl46-card">
+                <i class="fas fa-heartbeat cl46-icon"></i>
+                <h3>Sync Monitoring</h3>
+                <p>
+                  Entra synchronization health helps IT verify whether the local
+                  directory and cloud identity relationship is functioning
+                  correctly and whether corrective action is needed.
+                </p>
+              </div>
+              <div class="cl46-card">
+                <i class="fas fa-cloud-upload-alt cl46-icon"></i>
+                <h3>Future Hybrid Options</h3>
+                <p>
+                  Services such as a VPN gateway or additional cloud recovery
+                  roles remain possible later, especially if Summit Care expands
+                  into additional offices or broader remote operations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cl59-securitySection">
+          <div class="cl59-wrapper">
+            <h2 class="titleBlue59">Cloud Integration In Practice</h2>
+            <p class="desc59">
+              Summit Care’s Microsoft hybrid environment delivers real value
+              because it ties local identity to cloud visibility, lets staff use
+              Microsoft applications more smoothly, and strengthens access
+              control with MFA and centralized administration. Features such as
+              password writeback, password hash sync, SSPR, Entra sync health,
+              Teams integration, and OneDrive access improve both user
+              experience and support efficiency in a way that fits the clinic’s
+              actual workflow.
+            </p>
+            <p class="desc59">
+              The next step is to move into
+              <strong>Network Segmentation, VLANs &amp; Subnetting</strong>, where
+              identity and cloud-connected access are paired with the internal
+              network structure that protects and organizes traffic across the
+              Summit Care environment.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <footer class="subtle-footer">
+        <p>New York, New York</p>
+        <p>Design: Sidiq Daniel &copy; All rights reserved</p>
+      </footer>
+    </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
