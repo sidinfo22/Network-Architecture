@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrading The Network</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!-- Background Wrapper -->
+  <div class="background-wrapper">
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+      Complete Networking Solutions by Sidiq Daniel
+    </div>
+<!-- Sticky Header -->
+<div class="sticky-header">
+  <div class="logo">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">
+      <img src="images/daters.png" alt="Logo" class="logo-image">
+    </a>
+    <a href="index.html" class="logo-text-link">Upgrading The Network</a>
+  </div>
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav class="dropdown-menu">
+    <ul>
+      <!-- Home Button -->
+      <li class="home-item">
+        <a href="index.html" class="home-link">Home</a>
+      </li>
+      <!-- Index Dropdown -->
+<li class="menu-item" onclick="toggleSubMenu()">
+    <span class="menu-title">Index <i class="arrow">&#x25BC;</i></span>
+    <ul class="sub-menu">
+        <li data-href="objectives.html">Company Objectives & Gap Analysis Overview</li>
+        <li data-href="assets.html">Assets & Inventory</li>
+        <li data-href="deploy.html">Procurement & Deployment</li>
+        <li data-href="diagrams.html">Network Diagrams & Topologies</li>
+        <li data-href="segmentation.html">Network Segmentation, VLAN'S, & Subnetting</li>
+        <li data-href="voip.html">VoIP Configuration</li>
+        <li data-href="cloud.html">Cloud Infrastructure & Software Defined Networking</li>
+        <li data-href="programming.html">Programming & API's</li>
+        <li data-href="cybersecurity.html">Cybersecurity Measures & Data Protection</li>
+        <li data-href="hippa.html">HIPPA Compliance, Regulation, & Risk</li>
+    </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+<section class="intro-section">
+  <div class="button-like">The Gold Standard</div>
+  <span class="star2">★ ★ ★ ★ ★</span>
+  <h1>Research & Development</h1>
+  <p>Documenting the technical research, platform comparisons, vendor analysis, and planning decisions that shaped Summit Care Medical Clinic’s enterprise network design.</p>
+
+
+  <!-- ===============================
+     SECTION 1: PROGRAMMING OVERVIEW (pr21)
+     =============================== -->
+<section class="pr21-overviewSection">
+  <div class="pr21-wrapper">
+    <h2 class="titleBlue21">Research Overview</h2>
+    <p class="desc21">
+      Before finalizing Summit Care’s architecture, we used a research and
+      development phase to compare hardware vendors, cloud ecosystems,
+      hypervisors, software platforms, deployment methods, licensing paths, and
+      long-term support requirements. This page captures the technical
+      comparisons and decision-making process that helped us determine which
+      tools, platforms, and infrastructure choices best matched the clinic’s
+      operational needs, budget, scale, and staff skill set.
+    </p>
+    <ul class="pr21-highlightsList">
+      <li><i class="fas fa-network-wired"></i> Cisco vs Ubiquiti comparison for switching, routing, compatibility, and usability</li>
+      <li><i class="fas fa-cloud"></i> Google Workspace vs Microsoft cloud services comparison for identity, email, collaboration, and hybrid integration</li>
+      <li><i class="fas fa-server"></i> Hypervisor and server planning across Proxmox, Hyper-V, VMware, storage, virtualization, and backup needs</li>
+      <li><i class="fas fa-tools"></i> Endpoint provisioning, VPN, licensing, remote support, and staff capability analysis for operational readiness</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===============================
+     SECTION 2: NETWORK HARDWARE RESEARCH (pr34)
+     =============================== -->
+<section class="pr34-langSection">
+  <div class="pr34-wrapper">
+    <h2 class="titleBlack34">Network Hardware & Platform Comparisons</h2>
+    <p class="desc34">
+      A major part of the research phase involved comparing which network
+      platforms would best support Summit Care’s size, growth plans, and staff
+      familiarity. We looked beyond specs alone and considered compatibility,
+      long-term support, ease of management, training overhead, and how well
+      each platform would fit into a healthcare environment with security and
+      uptime requirements.
+    </p>
+    <div class="pr34-cardGrid">
+      <div class="pr34-card">
+        <i class="fas fa-network-wired pr34-icon"></i>
+        <h3>Cisco vs Ubiquiti</h3>
+        <p>
+          We compared Cisco and Ubiquiti for routing, switching, VLAN support,
+          subnetting, firewall compatibility, controller-based management, and
+          long-term reliability. Cisco stood out for enterprise networking depth
+          and compatibility, while Ubiquiti remained attractive for simpler
+          management and cost-conscious deployment in selected layers.
+        </p>
+      </div>
+      <div class="pr34-card">
+        <i class="fas fa-money-bill-wave pr34-icon"></i>
+        <h3>Cost, Scalability & Support</h3>
+        <p>
+          We evaluated not just purchase price, but licensing overhead, support
+          expectations, scalability, replacement cost, and how easily the
+          selected hardware could expand as Summit Care grows into additional
+          offices, users, and network segments.
+        </p>
+      </div>
+      <div class="pr34-card">
+        <i class="fas fa-users-cog pr34-icon"></i>
+        <h3>Staff Familiarity</h3>
+        <p>
+          Internal capability mattered in our selection process. We reviewed the
+          existing skills of team members with <strong>CCNA</strong>-level
+          networking knowledge, familiarity with Ubiquiti equipment, and prior
+          exposure to Proxmox and Windows infrastructure to reduce unnecessary
+          complexity in day-to-day support.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+     SECTION 3: CLOUD, EMAIL & IDENTITY RESEARCH (pr47)
+     =============================== -->
+<section class="pr47-netAutoSection">
+  <div class="pr47-wrapper">
+    <h2 class="titleBlue47">Cloud, Email & Identity Research</h2>
+    <p class="desc47">
+      Summit Care also needed a clearer direction for cloud services, email,
+      identity management, and collaboration. We reviewed how different
+      ecosystems would impact user access, support overhead, pricing, hybrid
+      synchronization, and the clinic’s long-term operational model.
+    </p>
+    <div class="pr47-autoGrid">
+      <div class="pr47-autoItem">
+        <h3><i class="fas fa-envelope-open-text"></i> Google Workspace vs Microsoft</h3>
+        <ul>
+          <li>Compared Google Workspace against Microsoft for mail, productivity, collaboration, and admin tooling</li>
+          <li>Reviewed licensing, migration complexity, security controls, and user experience for staff</li>
+          <li>Determined Microsoft aligned better with the planned Windows domain and hybrid identity model</li>
+        </ul>
+      </div>
+      <div class="pr47-autoItem">
+        <h3><i class="fas fa-id-card"></i> Hybrid Cloud Integration</h3>
+        <ul>
+          <li>Evaluated how Microsoft cloud services would integrate with on-prem Active Directory</li>
+          <li>Reviewed single sign-on, cloud app access, user management, and sync behavior</li>
+          <li>Confirmed the Microsoft direction better supported Summit Care’s identity, mail, and remote collaboration goals</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+     SECTION 4: HYPERVISOR & SERVER RESEARCH (pr58)
+     =============================== -->
+<section class="pr58-apiSection">
+  <div class="pr58-wrapper">
+    <h2 class="titleBlack58">Hypervisors, Servers & Storage Planning</h2>
+    <p class="desc58">
+      Another major research area focused on how Summit Care’s server
+      environment should be built, virtualized, and sized. We compared
+      hypervisors, storage expectations, and server role requirements to make
+      sure the final environment could support domain services, web/database
+      functions, backup operations, and future scaling.
+    </p>
+    <div class="pr58-carouselContainer">
+      <div class="pr58-slide active58">
+        <i class="fas fa-layer-group pr58-iconLarge"></i>
+        <h3>Proxmox vs Hyper-V vs VMware</h3>
+        <p>
+          We compared Proxmox, Microsoft Hyper-V, and VMware for pricing,
+          usability, virtualization features, backup integration, and how well
+          each platform matched the technical comfort level of the support team.
+        </p>
+      </div>
+      <div class="pr58-slide">
+        <i class="fas fa-database pr58-iconLarge"></i>
+        <h3>Server Role Requirements</h3>
+        <p>
+          We mapped requirements for Active Directory, DNS, DHCP, web hosting,
+          database services, backup targets, and storage expansion so the chosen
+          server would not be undersized for production needs.
+        </p>
+      </div>
+      <div class="pr58-slide">
+        <i class="fas fa-hdd pr58-iconLarge"></i>
+        <h3>Storage & Backup Capacity</h3>
+        <p>
+          Storage planning included backup retention, VM growth, shared data,
+          and expansion needs such as <strong>8TB-class storage</strong> targets
+          to support domain data, web/database workloads, and recovery planning.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+     SECTION 5: SOFTWARE, LICENSING & ENDPOINT PROVISIONING (pr62)
+     =============================== -->
+<section class="pr62-windowsSection">
+  <div class="pr62-wrapper">
+    <h2 class="titleBlue62">Software, Licensing & Endpoint Provisioning</h2>
+    <p class="desc62">
+      Research for this project also covered the practical tools needed to
+      deploy and manage user devices. We compared provisioning software,
+      imaging approaches, licensing sources, and standard endpoint software so
+      Summit Care could build a consistent workstation strategy across desktops
+      and laptops. That review also included whether selected software and
+      cloud-connected services were a good fit for HIPAA-aware healthcare
+      operations before they were approved for use in the environment.
+    </p>
+    <ul class="pr62-highlightsList">
+      <li><i class="fas fa-laptop"></i> Compared Windows 11 deployment, imaging, cloning, and PXE-based provisioning workflows</li>
+      <li><i class="fas fa-key"></i> Reviewed Windows 11, Windows Server, Microsoft, and supporting software licensing paths across vendors</li>
+      <li><i class="fas fa-file-alt"></i> Assessed standard endpoint software such as Adobe Acrobat, remote support tools, and device setup utilities</li>
+    </ul>
+    <div class="pr62-tableContainer">
+      <table class="pr62-scriptTable">
+        <thead>
+          <tr>
+            <th>Comparison Area</th>
+            <th>What We Evaluated</th>
+            <th>Why It Mattered</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Provisioning Tools</td>
+            <td>Clonezilla, Rufus, Windows Deployment Services, PXE boot</td>
+            <td>Standardizing workstation setup and faster user rollouts</td>
+          </tr>
+          <tr>
+            <td>Licensing</td>
+            <td>Windows 11, Windows Server, Microsoft services, vendor sourcing</td>
+            <td>Budget control, support coverage, and compliance readiness</td>
+          </tr>
+          <tr>
+            <td>Endpoint Software</td>
+            <td>Adobe Acrobat, remote support tools, desktop standards</td>
+            <td>Consistent user experience and supportability</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+     SECTION 6: REMOTE ACCESS & SUPPORT TOOL RESEARCH (pr79)
+     =============================== -->
+<section class="pr79-cloneSection">
+  <div class="pr79-wrapper">
+    <h2 class="titleBlack79">Remote Access, VPNs & Support Tools</h2>
+    <p class="desc79">
+      Remote access requirements extended beyond users alone. We also compared
+      the tools Summit Care would need for secure staff access, remote IT
+      administration, and day-to-day support operations for distributed users
+      and future growth.
+    </p>
+    <div class="pr79-stepsGrid">
+      <div class="pr79-stepCard">
+        <i class="fas fa-user-shield pr79-icon"></i>
+        <h3>VPN Platform Comparisons</h3>
+        <p>
+          We compared Cisco, Meraki, Linux-based VPNs, pfSense-style software
+          VPN options, and other software-versus-hardware approaches to balance
+          security, ease of management, user experience, and cost.
+        </p>
+      </div>
+      <div class="pr79-stepCard">
+        <i class="fas fa-headset pr79-icon"></i>
+        <h3>Remote Support Tools</h3>
+        <p>
+          For desktop support and administration, we compared tools such as
+          <strong>TeamViewer</strong> and <strong>AnyDesk</strong> to determine
+          which platforms offered the right mix of reliability, security,
+          usability, and support efficiency for IT staff.
+        </p>
+      </div>
+      <div class="pr79-stepCard">
+        <i class="fas fa-user-cog pr79-icon"></i>
+        <h3>Endpoint Use Cases</h3>
+        <p>
+          We also reviewed how desktops, laptops, and remote staff devices
+          would actually connect to Summit Care resources so the selected tools
+          would remain practical for both office productivity and support
+          workflows.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+     SECTION 7: STAFF CAPABILITY & OPERATIONAL READINESS (pr83)
+     =============================== -->
+<section class="pr83-dashSection">
+  <div class="pr83-wrapper">
+    <h2 class="titleBlue83">Staff Capability & Operational Readiness</h2>
+    <p class="desc83">
+      A key part of the research process involved looking at the actual skills
+      available on the support side. Technology decisions were weighed not only
+      against features and cost, but also against whether the internal team
+      could realistically manage, troubleshoot, and scale the environment over
+      time.
+    </p>
+    <div class="pr83-barWrapper">
+      <h3><i class="fas fa-user-check"></i> Team Readiness Review</h3>
+      <div class="pr83-barTrack">
+        <div class="pr83-barFill" style="width:82%;">
+          <span class="pr83-barText">82% Practical Alignment with Current Team Skill Set</span>
+        </div>
+      </div>
+      <p class="desc83 subText">
+        This reflects how strongly the chosen direction aligned with existing
+        staff experience in Cisco networking, Ubiquiti hardware, Windows
+        environments, and Proxmox-based virtualization, helping reduce training
+        friction and improve long-term support confidence.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===============================
+     SECTION 8: CONCLUSION & NEXT STEPS (pr94)
+     =============================== -->
+<section class="pr94-conclusionSection">
+  <div class="pr94-wrapper">
+    <h2 class="titleBlack94">Conclusion &amp; Next Steps</h2>
+    <p class="desc94">
+      By comparing vendors, cloud platforms, licensing paths, provisioning
+      tools, VPN solutions, hypervisors, server requirements, and staff
+      readiness, this research phase established a clearer direction for Summit
+      Care’s network transformation. Instead of choosing tools in isolation, we
+      evaluated how each platform would affect cost, compatibility, usability,
+      supportability, and long-term growth. With these findings in place, the
+      next step is to move into <strong>Assets, Inventory & Procurement</strong>
+      so we can decide what equipment, software, licensing, and vendors will be
+      formally selected, tracked, organized, and purchased for implementation.
+    </p>
+  </div>
+    <!-- Navigation Buttons -->
+    <div class="bottomBtn85-group">
+      <button class="footer-primary-button" onclick="window.location.href='cybersecurity.html';">
+        Cybersecurity Measures & Data Protection
+      </button>
+      <button class="footer-secondary-button" id="return-to-top">
+        Return to Home
+      </button>
+    </div>
+  
+</section>
+</section>
+  <!-- Minimal, Center-Aligned Footer -->
+  <footer class="subtle-footer">
+    <p>New York, New York</p>
+    <p>Design: Sidiq Daniel &copy; All rights reserved</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

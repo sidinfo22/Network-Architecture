@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrading The Network</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!-- Background Wrapper -->
+  <div class="background-wrapper">
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+      Complete Networking Solutions by Sidiq Daniel
+    </div>
+<!-- Sticky Header -->
+<div class="sticky-header">
+  <div class="logo">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">
+      <img src="images/daters.png" alt="Logo" class="logo-image">
+    </a>
+    <a href="index.html" class="logo-text-link">Upgrading The Network</a>
+  </div>
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav class="dropdown-menu">
+    <ul>
+      <!-- Home Button -->
+      <li class="home-item">
+        <a href="index.html" class="home-link">Home</a>
+      </li>
+      <!-- Index Dropdown -->
+<li class="menu-item" onclick="toggleSubMenu()">
+    <span class="menu-title">Index <i class="arrow">&#x25BC;</i></span>
+    <ul class="sub-menu">
+        <li data-href="objectives.html">Company Objectives & Gap Analysis Overview</li>
+        <li data-href="assets.html">Assets & Inventory</li>
+        <li data-href="deploy.html">Procurement & Deployment</li>
+        <li data-href="diagrams.html">Network Diagrams & Topologies</li>
+        <li data-href="segmentation.html">Network Segmentation, VLAN'S, & Subnetting</li>
+        <li data-href="voip.html">VoIP Configuration</li>
+        <li data-href="cloud.html">Cloud Infrastructure & Software Defined Networking</li>
+        <li data-href="programming.html">Programming & API's</li>
+        <li data-href="cybersecurity.html">Cybersecurity Measures & Data Protection</li>
+        <li data-href="hippa.html">HIPPA Compliance, Regulation, & Risk</li>
+    </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+<section class="intro-section">
+  <div class="button-like">The Gold Standard</div>
+  <span class="star2">★ ★ ★ ★ ★</span>
+  <h1>Assets, Inventory & Procurement</h1>
+  <p>Cataloging hardware, software, licensing, and purchasing decisions to support Summit Care Medical Clinic’s secure, compliant, and organized infrastructure rollout.</p>
+
+<!-- =======================
+     ASSETS & INVENTORY INTRO 47
+     ======================= -->
+     <section class="assetsIntro47-section">
+      <div class="section47-wrapper">
+        <h2 class="titleBlue47">Assets &amp; Inventory Overview</h2>
+        <p class="desc47">
+          After completing the research and development phase, the next step was
+          to define how Summit Care’s hardware, software, licensing, and vendor
+          purchases would be tracked and organized. We began by taking stock of
+          the clinic’s existing environment and recording devices, model names,
+          quantities, and supporting notes in a shared Google Sheets inventory
+          document stored in Google Drive. That spreadsheet serves as an early
+          single place of truth for planning, budgeting, procurement, and
+          technical visibility as the environment moves from a smaller office
+          setup toward a more organized enterprise-ready standard.
+        </p>
+        <p class="desc47">
+          This page introduces both the inventory side of the project and the
+          procurement direction behind the final design. It captures what assets
+          need to be tracked, how ownership and visibility will be maintained,
+          what platforms and licensing are being selected, and how Summit Care
+          will keep a cleaner record of the equipment and services supporting
+          the network. It also introduces the high-level hardware and software
+          direction chosen for servers, desktops, laptops, VPN access, cloud
+          services, switching, wireless, and virtualization.
+        </p>
+      </div>
+    </section>
+    
+    <!-- =======================
+         HARDWARE & DEVICE TRACKING 47
+         ======================= -->
+    <section class="hardware47-section">
+      <div class="section47-wrapper">
+        <h2 class="titlePurple47">Hardware &amp; Device Tracking</h2>
+        <p class="desc47">
+          Each asset is planned to receive a physical asset tag generated from a
+          label machine and be recorded manually in the inventory spreadsheet.
+          Rather than relying on RFID or automated scanning, the current plan is
+          to document assets by hand so the technical team can keep practical
+          visibility into the device name, role, location, assigned user,
+          serial number, model, status, warranty or licensing notes, and any
+          supporting remarks needed for future support and procurement
+          visibility.
+        </p>
+        <div class="cards47-row">
+          <div class="cards47-item">
+            <div class="cards47-icon">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <h3>Office Laptops &amp; Desktops</h3>
+            <p>
+              Fixed desktops and mobile laptops will be tracked by hostname,
+              assigned user, department, model, serial number, software image,
+              and lifecycle status so Summit Care can scale devices more
+              consistently across clinical and administrative teams.
+            </p>
+          </div>
+          <div class="cards47-item">
+            <div class="cards47-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>Network Infrastructure</h3>
+            <p>
+              Routers, switches, access points, firewalls, servers, and backup
+              infrastructure will all be recorded with their role, placement,
+              model, configuration ownership, serial details, and procurement
+              source so the network side of the environment remains just as
+              visible as the end-user device side.
+            </p>
+          </div>
+          <div class="cards47-item">
+            <div class="cards47-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile &amp; BYOD Devices</h3>
+            <p>
+              Any laptops, mobile devices, or bring-your-own devices with access
+              to wireless, VPN, or internal services will be tracked at a
+              higher level so Summit Care can maintain visibility into who is
+              connecting, what access they have, and which users own those
+              endpoints.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- =======================
+         SOFTWARE & LICENSING 47
+         ======================= -->
+    <section class="software47-section">
+      <div class="section47-wrapper">
+        <h2 class="titleBlue47">Software &amp; Licensing</h2>
+        <p class="desc47">
+          Alongside hardware, we also maintain an inventory of operating system
+          licensing, Microsoft services, security tooling, remote support
+          software, PDF/document tools, and any platform needed to operate or
+          support the environment long term.
+        </p>
+    
+        <ul class="software47-list">
+          <li>
+            <i class="fas fa-key icon47-list"></i>
+            <strong>Windows Server 2022</strong>
+            <em>(Chosen over newer release options because it is the more stable and comfortable fit for this deployment)</em>
+            – Domain services, DNS, DHCP, VPN support workloads, and core server infrastructure
+          </li>
+          <li>
+            <i class="fas fa-file-invoice icon47-list"></i>
+            <strong>Microsoft 365 / Entra P1</strong>
+            <em>(Hybrid identity, SSO, email, productivity, and cloud access)</em>
+            – Replacing the clinic’s Google Workspace direction with Microsoft-aligned services and tighter integration with the planned on-prem environment
+          </li>
+          <li>
+            <i class="fas fa-shield-alt icon47-list"></i>
+            <strong>Adobe Acrobat, Remote Support & Utility Software</strong>
+            <em>(Endpoint standards and support tooling)</em>
+            – Includes document tools, remote administration software such as TeamViewer-class tools, and workstation setup utilities
+          </li>
+          <li>
+            <i class="fas fa-database icon47-list"></i>
+            <strong>Windows 11, Server & Vendor Licensing Research</strong>
+            <em>(Sourced and compared across vendors)</em>
+            – Licensing review focused on cost, legitimacy, support coverage, and long-term manageability
+          </li>
+        </ul>
+    
+        <p class="desc47" style="margin-top: 2rem;">
+          Licensing research is treated as part of procurement itself. We
+          compared vendor sourcing options for Windows 11, Windows Server,
+          Microsoft services, Adobe, remote support tools, and other required
+          software to make sure Summit Care can stay compliant, budget-aware,
+          and properly supported without relying on loosely tracked purchases.
+        </p>
+      </div>
+    </section>
+    
+    <!-- =======================
+         PROCUREMENT SELECTIONS 47
+         ======================= -->
+    <section class="inventory47-section">
+      <div class="section47-wrapper">
+        <h2 class="titlePurple47">Procurement Selections &amp; Technical Direction</h2>
+        <p class="desc47">
+          Once the research phase narrowed our options, procurement planning
+          focused on which hardware and software stack would best support Summit
+          Care’s real-world environment. Below is a high-level view of the
+          direction selected for implementation.
+        </p>
+        <div class="inventory47-cards">
+          <div class="inventory47-card">
+            <i class="fas fa-server inv47-icon"></i>
+            <h3>Core Server Platform</h3>
+            <p>
+              We selected a <strong>Dell PowerEdge R740XD</strong> class server
+              with approximately <strong>64GB of RAM</strong> and
+              <strong>8TB of storage</strong> to support Windows Server roles,
+              Linux-based services, virtualization, backups, remote access
+              services, and future growth.
+            </p>
+          </div>
+          <div class="inventory47-card">
+            <i class="fas fa-desktop inv47-icon"></i>
+            <h3>User Endpoints</h3>
+            <p>
+              Planned user hardware includes <strong>Dell OptiPlex 7020/7040</strong>
+              desktops for fixed workstations and <strong>Dell Inspiron</strong>
+              laptops for mobility and support flexibility, helping maintain a
+              more consistent Windows endpoint standard across the clinic.
+            </p>
+          </div>
+          <div class="inventory47-card">
+            <i class="fas fa-network-wired inv47-icon"></i>
+            <h3>Networking & Connectivity</h3>
+            <p>
+              The networking stack includes a <strong>Cisco ASA firewall</strong>,
+              a <strong>Cisco router</strong>, <strong>Cisco CBS 1300 switching</strong>,
+              <strong>Ubiquiti access points</strong>, a configured office
+              printer, and supporting network-attached systems with static IP
+              assignments where needed. The access point choice reflects
+              compatibility with the switching environment and the practical
+              benefit of continuing with spare Ubiquiti hardware already
+              available to the project.
+            </p>
+          </div>
+          <div class="inventory47-card">
+            <i class="fas fa-lock inv47-icon"></i>
+            <h3>Redundant Remote Access</h3>
+            <p>
+              We are planning for two VPN paths: a Cisco firewall-based VPN and
+              a Linux-based software VPN hosted on the Dell server platform, so
+              Summit Care has higher availability, better redundancy, and more
+              flexibility for remote access and administration.
+            </p>
+          </div>
+          <div class="inventory47-card">
+            <i class="fas fa-layer-group inv47-icon"></i>
+            <h3>Virtualization Direction</h3>
+            <p>
+              We selected <strong>Proxmox</strong> as the preferred hypervisor
+              because it is free to deploy, Linux-based, and better aligned with
+              the skill set already available in the technical team.
+            </p>
+          </div>
+          <div class="inventory47-card">
+            <i class="fas fa-envelope inv47-icon"></i>
+            <h3>Microsoft Service Direction</h3>
+            <p>
+              Procurement planning also supports the shift from Google Workspace
+              to Microsoft services, including Microsoft mail integration,
+              <strong>Entra P1</strong>, single sign-on, hybrid cloud identity,
+              and a more unified user and licensing experience.
+            </p>
+          </div>
+          <div class="inventory47-card">
+            <i class="fas fa-hdd inv47-icon"></i>
+            <h3>Recovery Support Hardware</h3>
+            <p>
+              A <strong>Synology NAS</strong> and <strong>UPS</strong> are part
+              of the supporting asset set so Summit Care can retain local backup
+              copies, keep the server stable during power issues, and maintain
+              better disaster recovery readiness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- =======================
+         DEVICE ASSIGNMENTS 47
+         ======================= -->
+    <section class="assign47-section">
+      <div class="section47-wrapper">
+        <h2 class="titleBlue47">Device Assignments &amp; Ownership</h2>
+        <p class="desc47">
+          Tracking who owns which device is crucial for accountability,
+          compliance, and support clarity. Below is a sample table showing how
+          Summit Care assets can be mapped by asset tag, hostname, department,
+          user, and current usage state while also tying back to spreadsheet
+          records that hold model, serial number, licensing, and procurement
+          notes.
+        </p>
+        <!-- Example table for Device-User assignments -->
+        <div class="table47-responsive">
+          <table class="table47-assign">
+            <thead>
+              <tr>
+                <th>Device Tag</th>
+                <th>Hostname</th>
+                <th>Assigned To</th>
+                <th>Department</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SCM-LT-001</td>
+                <td>SCM-HR-LT-001</td>
+                <td>Jane Doe</td>
+                <td>Human Resources</td>
+                <td><span class="status47 inUse47">In Use</span></td>
+              </tr>
+              <tr>
+                <td>SCM-DS-007</td>
+                <td>SCM-ADM-DS-001</td>
+                <td>John Smith</td>
+                <td>Administration</td>
+                <td><span class="status47 inUse47">In Use</span></td>
+              </tr>
+              <tr>
+                <td>SCM-SW-023</td>
+                <td>SCM-SW-CL-01</td>
+                <td>N/A</td>
+                <td>Networking</td>
+                <td><span class="status47 active47">Active</span></td>
+              </tr>
+              <tr>
+                <td>SCM-FW-001</td>
+                <td>SCM-ASA-EDGE-01</td>
+                <td>N/A</td>
+                <td>Networking</td>
+                <td><span class="status47 active47">Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    
+    <!-- =======================
+         INVENTORY VISUAL CHARTS 47
+         ======================= -->
+    <section class="charts47-section">
+      <div class="section47-wrapper">
+        <h2 class="titlePurple47">Inventory Distribution</h2>
+        <p class="desc47">
+          Below is a visual sample breakdown showing how assets may be
+          distributed across Summit Care Medical Clinic. This high-level view
+          helps illustrate how infrastructure, endpoint, and mobility assets
+          are dispersed throughout the organization and where procurement
+          priorities may need to be focused. It also supports the Google
+          Sheets-based source-of-truth approach by giving the team a simple
+          visual reference for how assets are spread across the environment.
+        </p>
+        <div class="charts47-visualRow">
+          <!-- Chart 1 -->
+          <div class="charts47-card">
+            <h3><i class="fas fa-laptop"></i> Laptops / Desktops</h3>
+            <div class="charts47-barTrack">
+              <div class="charts47-barFill" style="width: 40%;">
+                <span class="charts47-barText">40%</span>
+              </div>
+            </div>
+          </div>
+          <!-- Chart 2 -->
+          <div class="charts47-card">
+            <h3><i class="fas fa-network-wired"></i> Network Devices</h3>
+            <div class="charts47-barTrack">
+              <div class="charts47-barFill" style="width: 25%;">
+                <span class="charts47-barText">25%</span>
+              </div>
+            </div>
+          </div>
+          <!-- Chart 3 -->
+          <div class="charts47-card">
+            <h3><i class="fas fa-mobile-alt"></i> Mobile / BYOD</h3>
+            <div class="charts47-barTrack">
+              <div class="charts47-barFill" style="width: 20%;">
+                <span class="charts47-barText">20%</span>
+              </div>
+            </div>
+          </div>
+          <!-- Chart 4 -->
+          <div class="charts47-card">
+            <h3><i class="fas fa-server"></i> Servers &amp; Storage</h3>
+            <div class="charts47-barTrack">
+              <div class="charts47-barFill" style="width: 15%;">
+                <span class="charts47-barText">15%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- =======================
+         CONCLUSION & NEXT STEPS 47
+         ======================= -->
+    <section class="conclusion47-section">
+      <div class="section47-wrapper">
+        <h2 class="titleBlue47">Closing Notes</h2>
+        <p class="desc47">
+          By establishing a clearer source of truth for hardware, software,
+          licensing, and procurement planning, Summit Care gains a more
+          organized foundation for implementation. After researching platforms
+          and defining what equipment, services, and licensing should be
+          acquired, the next step is to move into
+          <strong>Documentation, Diagrams &amp; Topologies</strong>, where this
+          inventory and procurement information can be turned into naming
+          conventions, network diagrams, topology views, asset labeling
+          standards, and the visual architecture of the environment.
+        </p>
+      </div>
+    </section>
+
+       <!-- Example Buttons -->
+       <div class="bottomBtn85-group">
+        <button class="footer-primary-button" onclick="window.location.href='diagrams.html';">
+           Network Diagrams & Topologies
+        </button>
+        <button class="footer-secondary-button" id="return-to-top">
+          Return to Home
+        </button>
+      </div>
+
+</section>
+  <!-- Minimal, Center-Aligned Footer -->
+  <footer class="subtle-footer">
+    <p>New York, New York</p>
+    <p>Design: Sidiq Daniel &copy; All rights reserved</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrading The Network</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!-- Background Wrapper -->
+  <div class="background-wrapper">
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+      Complete Networking Solutions by Sidiq Daniel
+    </div>
+<!-- Sticky Header -->
+<div class="sticky-header">
+  <div class="logo">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">
+      <img src="images/daters.png" alt="Logo" class="logo-image">
+    </a>
+    <a href="index.html" class="logo-text-link">Upgrading The Network</a>
+  </div>
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav class="dropdown-menu">
+    <ul>
+      <!-- Home Button -->
+      <li class="home-item">
+        <a href="index.html" class="home-link">Home</a>
+      </li>
+      <!-- Index Dropdown -->
+<li class="menu-item" onclick="toggleSubMenu()">
+    <span class="menu-title">Index <i class="arrow">&#x25BC;</i></span>
+    <ul class="sub-menu">
+        <li data-href="objectives.html">Company Objectives & Gap Analysis Overview</li>
+        <li data-href="assets.html">Assets & Inventory</li>
+        <li data-href="deploy.html">Procurement & Deployment</li>
+        <li data-href="diagrams.html">Network Diagrams & Topologies</li>
+        <li data-href="segmentation.html">Network Segmentation, VLAN'S, & Subnetting</li>
+        <li data-href="voip.html">VoIP Configuration</li>
+        <li data-href="cloud.html">Cloud Infrastructure & Software Defined Networking</li>
+        <li data-href="programming.html">Programming & API's</li>
+        <li data-href="cybersecurity.html">Cybersecurity Measures & Data Protection</li>
+        <li data-href="hippa.html">HIPPA Compliance, Regulation, & Risk</li>
+    </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+
+<section class="intro-section">
+  <div class="button-like">The Gold Standard</div>
+  <span class="star2">★ ★ ★ ★ ★</span>
+  <h1>Infrastructure Deployment & Configurations</h1>
+  <p>Deploying Summit Care Medical Clinic’s infrastructure with standardized configurations, clear rollout planning, golden baselines, and consistent operational standards across servers, endpoints, network infrastructure, wireless, and remote access. This phase focuses on how the environment is actually stood up, how configurations stay uniform, and how each deployed system supports long-term scalability, supportability, and cleaner day-to-day operations.</p>
+
+<!-- =======================
+     DEPLOYMENT OVERVIEW 85
+     ======================= -->
+     <section class="procIntro85-section">
+      <div class="section85-wrapper">
+        <h2 class="titleBlue85">Deployment Overview &amp; Configuration Standards</h2>
+        <p class="desc85">
+          Once research, asset planning, and documentation are complete, the
+          next step is to deploy Summit Care’s environment in a structured way.
+          This means establishing repeatable baseline configurations for
+          desktops, laptops, servers, switches, routers, firewalls, wireless
+          access points, and virtual machines so the clinic does not end up
+          with fragmented one-off setups that are hard to support later.
+        </p>
+        <p class="desc85">
+          Deployment is organized around consistency. Windows endpoints follow
+          one build standard, server workloads are staged on a Proxmox type-1
+          hypervisor, networking devices follow documented baseline
+          configurations, and authentication, VPN, DHCP, DNS, firewall rules,
+          and wireless settings are all deployed with the expectation that they
+          will be maintained uniformly and documented for future reference.
+        </p>
+        <div class="cardRow85">
+          <div class="infoCard85">
+            <div class="iconCircle85">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3>Golden Baselines</h3>
+            <p>
+              Each major system category receives a baseline configuration so
+              devices are deployed with the same standards for naming,
+              access, software, hardening, and support readiness.
+            </p>
+          </div>
+          <div class="infoCard85">
+            <div class="iconCircle85">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h3>Documented Configurations</h3>
+            <p>
+              Group policies, firewall rules, hostname standards, VPN details,
+              IP plans, SSH management standards, certificate-backed wireless
+              authentication settings, and role-based server settings are all
+              intended to be documented so deployment choices remain visible and
+              repeatable.
+            </p>
+          </div>
+          <div class="infoCard85">
+            <div class="iconCircle85">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </div>
+            <h3>Scalable Uniformity</h3>
+            <p>
+              The goal is not just to deploy once, but to create a model that
+              can be repeated as Summit Care grows, adds users, or opens
+              additional locations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- =======================
+         BASELINE CONFIGURATION CATEGORIES 85
+         ======================= -->
+    <section class="vendor85-section">
+      <div class="section85-wrapper">
+        <h2 class="titlePurple85">Baseline Configuration Categories</h2>
+        <p class="desc85">
+          Before rollout, we identify which system groups need a standard build
+          and configuration baseline. These baselines guide deployment and help
+          keep the environment consistent from one endpoint or network device
+          to the next.
+        </p>
+    
+        <div class="vendor85-row">
+          <div class="vendor85-card">
+            <div class="card85-header">
+              <i class="fas fa-desktop"></i>
+              <h3>Endpoints</h3>
+            </div>
+            <p>
+              Desktop PCs and laptops receive a standard Windows 11 deployment,
+              approved software stack, Active Directory join, naming convention,
+              and group policy alignment.
+            </p>
+          </div>
+    
+          <div class="vendor85-card">
+            <div class="card85-header">
+              <i class="fas fa-server"></i>
+              <h3>Servers &amp; Virtual Machines</h3>
+            </div>
+            <p>
+              Core server baselines cover the Proxmox host, Windows Server
+              virtual machines, Linux VPN services, and sandbox/test clients
+              used for validation and support.
+            </p>
+          </div>
+    
+          <div class="vendor85-card">
+            <div class="card85-header">
+              <i class="fas fa-network-wired"></i>
+              <h3>Network &amp; Wireless</h3>
+            </div>
+            <p>
+              Routers, firewalls, switches, and access points all require
+              baseline settings for VLANs, routing, wireless security,
+              firewall controls, remote access, and management access.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- =======================
+         SERVER & VIRTUALIZATION DEPLOYMENT 85
+         ======================= -->
+    <section class="budget85-section">
+      <div class="section85-wrapper">
+        <h2 class="titleBlue85">Server Platform, Hypervisor &amp; Core Services</h2>
+        <p class="desc85">
+          Summit Care’s core server platform is built around a
+          <strong>Dell PowerEdge R740XD</strong> that hosts a
+          <strong>Proxmox type-1 hypervisor</strong>. This gives the project a
+          central platform for Windows infrastructure services, Linux support
+          services, testing, and future expansion without scattering workloads
+          across disconnected hardware.
+        </p>
+    
+        <div class="budget85-visual">
+          <div class="budget85-item">
+            <span>Proxmox Hypervisor Host</span>
+            <div class="budget85-track">
+              <div class="budget85-fill" style="width: 100%;">
+                <div class="budget85-text">Dell PowerEdge R740XD</div>
+              </div>
+              <div class="budget85-goal">Type-1 virtualization layer</div>
+            </div>
+          </div>
+          <div class="budget85-item">
+            <span>Primary Infrastructure VM</span>
+            <div class="budget85-track">
+              <div class="budget85-fill" style="width: 86%;">
+                <div class="budget85-text">Windows Server 2022</div>
+              </div>
+              <div class="budget85-goal">AD, DNS, DHCP, NPS/RADIUS</div>
+            </div>
+          </div>
+          <div class="budget85-item">
+            <span>Support &amp; Test Workloads</span>
+            <div class="budget85-track">
+              <div class="budget85-fill" style="width: 68%;">
+                <div class="budget85-text">Linux VPN + Test Client</div>
+              </div>
+              <div class="budget85-goal">Remote access and sandbox validation</div>
+            </div>
+          </div>
+          <div class="budget85-item">
+            <span>Management &amp; Recovery</span>
+            <div class="budget85-track">
+              <div class="budget85-fill" style="width: 74%;">
+                <div class="budget85-text">GUI + iDRAC Access</div>
+              </div>
+              <div class="budget85-goal">Remote administration and recovery</div>
+            </div>
+          </div>
+        </div>
+        <p class="desc85" style="margin-top: 2rem;">
+          The hypervisor is managed through its administrative GUI, while the
+          server’s remote management interface provides additional recovery and
+          control if something goes wrong. This gives the team direct access to
+          the platform even when an operating system or virtual machine needs
+          maintenance.
+        </p>
+      </div>
+    </section>
+    
+    
+    <!-- =======================
+         DEPLOYMENT CONFIGURATIONS 85
+         ======================= -->
+    <section class="deploy85-section">
+      <div class="section85-wrapper">
+        <h2 class="titlePurple85">Deployment Configurations &amp; Operational Baselines</h2>
+        <p class="desc85">
+          The deployment work itself is organized around what gets configured,
+          how it is standardized, and how it is documented for reuse. Key
+          deployment areas include:
+        </p>
+    
+        <ul class="deploy85-list">
+          <li>
+            <i class="fas fa-cogs listIcon85"></i>
+            <strong>Endpoint Baselines:</strong> Windows 11 is provisioned from
+            USB-based media using tools such as Rufus and the Windows ISO so
+            desktops and laptops can be deployed consistently, joined to Active
+            Directory, and brought under group policy control.
+          </li>
+          <li>
+            <i class="fas fa-play-circle listIcon85"></i>
+            <strong>Windows Infrastructure Services:</strong> Windows Server
+            2022 provides Active Directory, DNS, DHCP, and Network Policy
+            Server so identity, addressing, and RADIUS-backed authentication
+            are all centralized.
+          </li>
+          <li>
+            <i class="fas fa-server listIcon85"></i>
+            <strong>Router, Firewall &amp; Switch Configurations:</strong>
+            Cisco routing, switching, and firewall settings are staged with
+            VLANs, subnet awareness, firewall rules, proxy controls, management
+            restrictions, and the allowances needed for web services and
+            internal application traffic.
+          </li>
+          <li>
+            <i class="fas fa-wifi listIcon85"></i>
+            <strong>Wireless &amp; Identity Integration:</strong> Ubiquiti access
+            points are configured for WPA2-Enterprise and tied to the Windows
+            RADIUS/NPS service so staff wireless access uses identity-based
+            authentication instead of shared passwords. Certificate-based
+            RADIUS is part of the design, with username/password fallback where
+            required for supported clients.
+          </li>
+          <li>
+            <i class="fas fa-plug listIcon85"></i>
+            <strong>Static Infrastructure Services:</strong> The Synology NAS,
+            printer, and other fixed-support systems receive documented static
+            IP assignments, while the Verizon static public IP supports remote
+            access and externally reachable services more consistently.
+          </li>
+          <li>
+            <i class="fas fa-user-lock listIcon85"></i>
+            <strong>VPN Deployment:</strong> Remote access is supported through
+            both the Cisco firewall VPN and a Linux-based VPN virtual machine,
+            including IKE-based settings, L2TP/IPsec-style support for Windows
+            clients, and documented access standards for staff and IT use.
+          </li>
+          <li>
+            <i class="fas fa-terminal listIcon85"></i>
+            <strong>Secure Administration:</strong> SSH access to Cisco devices
+            and Linux virtual machines is limited to approved management paths
+            and uses private-key or certificate-based access rather than leaving
+            general interactive access open to the public internet.
+          </li>
+          <li>
+            <i class="fas fa-file-signature listIcon85"></i>
+            <strong>Configuration Documentation:</strong> Group policies,
+            firewall rules, baseline settings, and service configurations are
+            meant to be preserved in the documentation set so future changes
+            remain controlled and understandable.
+          </li>
+          <li>
+            <i class="fas fa-tasks listIcon85"></i>
+            <strong>Task Scheduler &amp; PowerShell Automation:</strong>
+            Supporting scripts and scheduled jobs help monitor systems, protect
+            backups, and alert IT when services or expected conditions fall out
+            of baseline.
+          </li>
+        </ul>
+        <p class="desc85" style="margin-top: 2rem;">
+          DHCP failover, service redundancy, and management consistency are
+          treated as part of configuration itself. The goal is to deploy a
+          platform that is not just functional on day one, but supportable,
+          recoverable, and easier to expand without rebuilding standards from
+          scratch every time.
+        </p>
+      </div>
+    </section>
+    
+    
+    <!-- =======================
+         CONCLUSION & NEXT STEPS 85
+         ======================= -->
+    <section class="conclusion85-section">
+      <div class="section85-wrapper">
+        <h2 class="titleBlue85">Next Steps</h2>
+        <p class="desc85">
+          With deployment standards and core configurations defined, Summit
+          Care is positioned to roll out endpoints, virtual servers, wireless,
+          VPN access, and network infrastructure in a cleaner and more uniform
+          way. The next step is to move into
+          <strong>Hybrid Cloud Infrastructure &amp; Scalability</strong>, where
+          the on-prem environment extends into Microsoft services, hybrid
+          identity, cloud access, and future growth planning.
+        </p>
+    
+        <!-- Example Buttons -->
+        <div class="bottomBtn85-group">
+          <button class="footer-primary-button" onclick="window.location.href='cloud.html';">
+            Hybrid Cloud Infrastructure & Scalability
+          </button>
+          <button class="footer-secondary-button" id="return-to-top">
+            Return to Home
+          </button>
+        </div>
+      </div>
+    </section>
+    </section>
+      <!-- Minimal, Center-Aligned Footer -->
+  <footer class="subtle-footer">
+    <p>New York, New York</p>
+    <p>Design: Sidiq Daniel &copy; All rights reserved</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

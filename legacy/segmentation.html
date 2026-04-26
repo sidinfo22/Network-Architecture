@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrading The Network</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!-- Background Wrapper -->
+  <div class="background-wrapper">
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+      Complete Networking Solutions by Sidiq Daniel
+    </div>
+<!-- Sticky Header -->
+<div class="sticky-header">
+  <div class="logo">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">
+      <img src="images/daters.png" alt="Logo" class="logo-image">
+    </a>
+    <a href="index.html" class="logo-text-link">Upgrading The Network</a>
+  </div>
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav class="dropdown-menu">
+    <ul>
+      <!-- Home Button -->
+      <li class="home-item">
+        <a href="index.html" class="home-link">Home</a>
+      </li>
+      <!-- Index Dropdown -->
+<li class="menu-item" onclick="toggleSubMenu()">
+    <span class="menu-title">Index <i class="arrow">&#x25BC;</i></span>
+    <ul class="sub-menu">
+        <li data-href="objectives.html">Company Objectives & Gap Analysis Overview</li>
+        <li data-href="assets.html">Assets & Inventory</li>
+        <li data-href="deploy.html">Procurement & Deployment</li>
+        <li data-href="diagrams.html">Network Diagrams & Topologies</li>
+        <li data-href="segmentation.html">Network Segmentation, VLAN'S, & Subnetting</li>
+        <li data-href="voip.html">VoIP Configuration</li>
+        <li data-href="cloud.html">Cloud Infrastructure & Software Defined Networking</li>
+        <li data-href="programming.html">Programming & API's</li>
+        <li data-href="cybersecurity.html">Cybersecurity Measures & Data Protection</li>
+        <li data-href="hippa.html">HIPPA Compliance, Regulation, & Risk</li>
+    </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+<section class="intro-section">
+  <div class="button-like">The Gold Standard</div>
+  <span class="star2">★ ★ ★ ★ ★</span>
+  <h1>Network Segmentation, Vlans, & Subnetting</h1>
+  <p>Implementing segmentation, VLAN assignments, and subnetting optimizes traffic flow and meets the healthcare office’s security and compliance needs.</p>
+
+  <!-- ==============================
+     SECTION 1: INTRO & OVERVIEW (seg16)
+     ============================== -->
+<section class="seg16-introSection">
+  <div class="seg16-wrapper">
+    <h2 class="titleBlue16"> Overview</h2>
+    <p class="desc16">
+      As we transition from a basic small office setup to an enterprise-grade network,
+      <strong>Network Segmentation</strong> is a core pillar of our security and
+      performance strategy. By splitting our infrastructure into multiple logical
+      segments (<strong>VLANs</strong>), we reduce the attack surface, better
+      contain threats, and tailor resource access based on device role and
+      service type instead of leaving everything on one flat network. This
+      ensures that sensitive data such as <em>Patient Health Information
+      (PHI)</em>, internal services, public-facing systems, cameras, guest
+      access, and management interfaces remain separated appropriately.
+    </p>
+    <ul class="seg16-featuresList">
+      <li><i class="fas fa-check-circle"></i> Enforces <strong>Zero-Trust</strong> principles by limiting default trust between subnets.</li>
+      <li><i class="fas fa-check-circle"></i> Simplifies <strong>Access Control</strong> with refined ACLs and firewall rules.</li>
+      <li><i class="fas fa-check-circle"></i> Enables <strong>Scalability</strong> and modular growth, accommodating new services and devices with ease.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==============================
+     SECTION 2: SUMMIT CARE IP DESIGN (seg29)
+     ============================== -->
+<section class="seg29-subnettingSection">
+  <div class="seg29-wrapper">
+    <h2 class="titlePurple29">Summit Care IP Scheme &amp; Subnet Design</h2>
+    <p class="desc29">
+      Summit Care’s segmentation model starts from a single private office
+      address space and breaks it into functional VLANs and subnets. Rather
+      than separating the network by department, the design separates it by
+      role: endpoints, internal servers, web-facing systems, cameras, guest
+      access, VPN services, and management interfaces. This gives the office a
+      cleaner routing model and makes ACLs, firewall rules, and monitoring much
+      easier to manage.
+    </p>
+    <div class="seg29-subnetGrid">
+      <div class="seg29-card">
+        <i class="fas fa-network-wired seg29-icon"></i>
+        <h3>Overall Office Range</h3>
+        <p>
+          The office uses an overall <strong>10.7.0.0/16</strong> private space,
+          which is then broken into smaller subnets for the different systems
+          that make up the Summit Care environment.
+        </p>
+      </div>
+      <div class="seg29-card">
+        <i class="fas fa-code-branch seg29-icon"></i>
+        <h3>Role-Based Subnets</h3>
+        <p>
+          Subnets are assigned by function such as desktops, internal servers,
+          cameras, guest wireless, and management rather than by office title
+          or department.
+        </p>
+      </div>
+      <div class="seg29-card">
+        <i class="fas fa-random seg29-icon"></i>
+        <h3>Security &amp; Clarity</h3>
+        <p>
+          Because every subnet has a defined purpose, firewall ACLs, routing
+          rules, DHCP scopes, and logging can be applied with much less
+          ambiguity and lower lateral movement risk.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     SECTION 3: VLAN ARCHITECTURE (seg41)
+     ============================== -->
+<section class="seg41-vlanArchSection">
+  <div class="seg41-wrapper">
+    <h2 class="titleBlue41">VLAN Architecture & Design</h2>
+    <p class="desc41">
+      Our deployment utilizes <strong>Cisco switching</strong>,
+      <strong>Cisco ASA/firewall controls</strong>, and
+      <em>RADIUS-based authentication</em> to support a function-based VLAN
+      model. Each VLAN is aligned to a service role inside the Summit Care
+      environment:
+    </p>
+    <div class="seg41-vlanTableWrap">
+      <table class="seg41-vlanTable">
+        <thead>
+          <tr>
+            <th>VLAN ID</th>
+            <th>Network Role</th>
+            <th>IP Range</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10</td>
+            <td>User Endpoints</td>
+            <td>10.7.10.0/24</td>
+            <td>Office desktops and standard staff laptops</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Internal Servers</td>
+            <td>10.7.20.0/24</td>
+            <td>Active Directory, DNS, DHCP, NPS/RADIUS, infrastructure VMs</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>Web &amp; Public Services</td>
+            <td>10.7.30.0/24</td>
+            <td>Web-facing utilities and externally reachable support services</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>Database &amp; Application Data</td>
+            <td>10.7.40.0/24</td>
+            <td>Practice database and protected backend application traffic</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>Guest Wi-Fi</td>
+            <td>10.7.50.0/24</td>
+            <td>Internet-only guest wireless with no internal resource visibility</td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td>Cameras</td>
+            <td>10.7.60.0/24</td>
+            <td>Ubiquiti camera systems and isolated surveillance devices</td>
+          </tr>
+          <tr>
+            <td>70</td>
+            <td>VPN &amp; Remote Access</td>
+            <td>10.7.70.0/24</td>
+            <td>Remote staff connectivity and VPN-related services</td>
+          </tr>
+          <tr>
+            <td>80</td>
+            <td>Voice</td>
+            <td>10.7.80.0/24</td>
+            <td>Teams phones, voice endpoints, and telephony support traffic</td>
+          </tr>
+          <tr>
+            <td>90</td>
+            <td>Management</td>
+            <td>10.7.90.0/24</td>
+            <td>Switch, firewall, router, NAS, printer, and management IP access</td>
+          </tr>
+          <tr>
+            <td>99</td>
+            <td>Out-of-Band / iDRAC</td>
+            <td>10.7.99.0/24</td>
+            <td>Dedicated management for server recovery interfaces such as iDRAC</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="seg41-highlightList">
+      <li><i class="fas fa-user-shield"></i> <strong>Database, server, and web-facing services</strong> are separated so internal systems do not sit on the same network as exposed resources.</li>
+      <li><i class="fas fa-wifi"></i> <strong>Guest Wi-Fi</strong> is isolated on its own network with no internal resource visibility.</li>
+      <li><i class="fas fa-video"></i> <strong>Camera systems and management interfaces</strong> remain off the general endpoint network to reduce unnecessary exposure.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==============================
+     SECTION 4: SECURITY & ACCESS CONTROLS (seg52)
+     ============================== -->
+<section class="seg52-securitySection">
+  <div class="seg52-wrapper">
+    <h2 class="titlePurple52">Security & Access Controls</h2>
+    <p class="desc52">
+      VLAN segmentation is only as robust as the policies and rules that govern
+      inter-VLAN traffic. For Summit Care, segmentation is paired with a
+      layered <strong>access control</strong> model using Cisco firewalls,
+      Windows Server firewalling, pfSense-style filtering, and ACL policies:
+    </p>
+    <div class="seg52-securityGrid">
+      <!-- Card 1 -->
+      <div class="seg52-card">
+        <i class="fas fa-lock seg52-icon"></i>
+        <h3>ACL Policies</h3>
+        <p>
+          Each VLAN-to-VLAN communication path is explicitly defined in the
+          Cisco ASA firewall or routed policy layer. By default,
+          <em>deny all</em> is enforced, and only required traffic is allowed
+          between networks.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="seg52-card">
+        <i class="fas fa-key seg52-icon"></i>
+        <h3>RADIUS Authentication</h3>
+        <p>
+          Wireless clients authenticate through the Windows
+          <strong>RADIUS/NPS</strong> service, with certificate-based access
+          where supported and username/password-backed enterprise wireless
+          policies where required.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="seg52-card">
+        <i class="fas fa-shield-alt seg52-icon"></i>
+        <h3>IPS/IDS Integration</h3>
+        <p>
+          <strong>Intrusion Prevention/Detection Systems</strong> and monitored
+          firewall controls are placed at key network junctions so suspicious
+          traffic between internal, public, and management networks can be
+          detected and investigated quickly.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div class="seg52-card">
+        <i class="fas fa-list-ul seg52-icon"></i>
+        <h3>Policy Audits</h3>
+        <p>
+          Routine <strong>HIPAA</strong> compliance checks confirm that ACLs,
+          logs, Windows firewall settings, and network flow data match the
+          clinic’s security and privacy expectations.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     SECTION 5: TRUNKING & INTER-VLAN ROUTING (seg67)
+     ============================== -->
+<section class="seg67-trunkSection">
+  <div class="seg67-wrapper">
+    <h2 class="titleBlue67">Trunking &amp; Inter-VLAN Routing</h2>
+    <p class="desc67">
+      Our <strong>Cisco switching</strong> uses <em>802.1Q trunking</em> to
+      forward multiple VLANs across shared links, while the routing and policy
+      layer controls how traffic moves between those networks. Summit Care’s
+      configuration workflow also includes SSH-based administration, saved
+      exports, and documented configuration records:
+    </p>
+    <ul class="seg67-trunkList">
+      <li><i class="fas fa-arrow-right"></i> <strong>Trunk Ports</strong> carry the VLAN tags needed between Cisco switches, access layers, and routing points.</li>
+      <li><i class="fas fa-arrow-right"></i> <strong>Inter-VLAN Routing</strong> is handled through the routed/firewall layer so traffic can be filtered before moving across networks.</li>
+      <li><i class="fas fa-arrow-right"></i> <strong>Administrative Changes</strong> are made through SSH, documented, and backed up through saved configuration exports and downloaded records.</li>
+    </ul>
+    <div class="seg67-diagramPlaceholder">
+      <i class="fas fa-project-diagram"></i>
+      <p>Diagram Placeholder: Summit Care VLAN Core, Trunk Links &amp; Inter-VLAN Routing</p>
+      <img src="images/trunk2.jpg" alt="Summit Care trunk and routing example" style="max-width:100%; height:auto;" />
+    </div>
+</section>
+
+<!-- ==============================
+     SECTION 6: SAMPLE SUBNETTING SCHEME (seg74)
+     ============================== -->
+<section class="seg74-subnetSchemeSection">
+  <div class="seg74-wrapper">
+    <h2 class="titlePurple74">Sample Subnet Allocation</h2>
+    <p class="desc74">
+      Below is a simplified IP plan reflecting how Summit Care allocates
+      addresses across the environment. DHCP scopes are supported where
+      appropriate, while critical systems such as servers, switches, firewalls,
+      NAS services, printers, cameras, and management interfaces use static or
+      documented reserved addressing.
+    </p>
+    <div class="seg74-graphWrapper">
+      <div class="seg74-graphItem">
+        <span>VLAN 10 (User Endpoints):</span>
+        <div class="seg74-barTrack">
+          <div class="seg74-barFill" style="width: 48%;">
+            <span class="seg74-barText">10.7.10.0/24 endpoint pool</span>
+          </div>
+        </div>
+      </div>
+      <div class="seg74-graphItem">
+        <span>VLAN 20 (Internal Servers):</span>
+        <div class="seg74-barTrack">
+          <div class="seg74-barFill" style="width: 32%;">
+            <span class="seg74-barText">10.7.20.0/24 server services</span>
+          </div>
+        </div>
+      </div>
+      <div class="seg74-graphItem">
+        <span>VLAN 30 (Web & Public Services):</span>
+        <div class="seg74-barTrack">
+          <div class="seg74-barFill" style="width: 18%;">
+            <span class="seg74-barText">10.7.30.0/24 public-facing zone</span>
+          </div>
+        </div>
+      </div>
+      <div class="seg74-graphItem">
+        <span>VLAN 40 (Database & App Data):</span>
+        <div class="seg74-barTrack">
+          <div class="seg74-barFill" style="width: 22%;">
+            <span class="seg74-barText">10.7.40.0/24 protected data tier</span>
+          </div>
+        </div>
+      </div>
+      <div class="seg74-graphItem">
+        <span>VLAN 50 (Guest Wi-Fi):</span>
+        <div class="seg74-barTrack">
+          <div class="seg74-barFill" style="width: 14%;">
+            <span class="seg74-barText">10.7.50.0/24 isolated guest pool</span>
+          </div>
+        </div>
+      </div>
+      <div class="seg74-graphItem">
+        <span>VLAN 60 (Cameras):</span>
+        <div class="seg74-barTrack">
+          <div class="seg74-barFill" style="width: 20%;">
+            <span class="seg74-barText">10.7.60.0/24 camera network</span>
+          </div>
+        </div>
+      </div>
+      <div class="seg74-graphItem">
+        <span>VLAN 70 (VPN Services):</span>
+        <div class="seg74-barTrack">
+          <div class="seg74-barFill" style="width: 16%;">
+            <span class="seg74-barText">10.7.70.0/24 remote access pool</span>
+          </div>
+        </div>
+      </div>
+      <div class="seg74-graphItem">
+        <span>VLAN 90 / 99 (Management & iDRAC):</span>
+        <div class="seg74-barTrack">
+          <div class="seg74-barFill" style="width: 12%;">
+            <span class="seg74-barText">10.7.90.0/24 + 10.7.99.0/24 management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="desc74" style="margin-top: 1.5rem;">
+      Dynamic leases are set for end-user devices where appropriate, while
+      static or reserved addresses are used for the Cisco ASA firewall, Cisco
+      switches, routers, Windows domain services, Synology NAS, printer,
+      Ubiquiti cameras, and the server’s <strong>iDRAC</strong> management
+      interface. This keeps management access predictable and easier to
+      document, secure, and troubleshoot.
+    </p>
+  </div>
+</section>
+
+<!-- ==============================
+     SECTION 7: MONITORING & COMPLIANCE (seg85)
+     ============================== -->
+<section class="seg85-monitoringSection">
+  <div class="seg85-wrapper">
+    <h2 class="titleBlue85">Monitoring &amp; Compliance Checks</h2>
+    <p class="desc85">
+      Maintaining strong segmentation is an ongoing process. Summit Care tracks
+      VLAN behavior, management access, and routing boundaries through logging,
+      SNMP monitoring, and configuration review so security rules do not drift
+      away from the documented design.
+    </p>
+    <div class="seg85-featuresGrid">
+      <!-- Feature 1 -->
+      <div class="seg85-featureCard">
+        <i class="fas fa-chart-line seg85-icon"></i>
+        <h3>Real-Time Traffic Analysis</h3>
+        <p>
+          Network flow data and interface behavior can be reviewed to understand
+          VLAN utilization, unusual routing patterns, and capacity concerns.
+        </p>
+      </div>
+      <!-- Feature 2 -->
+      <div class="seg85-featureCard">
+        <i class="fas fa-user-secret seg85-icon"></i>
+        <h3>Unauthorized Access Alerts</h3>
+        <p>
+          If a device appears on an unexpected subnet, management path, or guest
+          network, alerts and log review support faster investigation.
+        </p>
+      </div>
+      <!-- Feature 3 -->
+      <div class="seg85-featureCard">
+        <i class="fas fa-clipboard-check seg85-icon"></i>
+        <h3>HIPAA Audit Trails</h3>
+        <p>
+          ACL changes, segmentation records, and management actions are
+          documented and reviewed so the clinic can support both operational
+          clarity and HIPAA-aware audit expectations.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     SECTION 8: CONCLUSION & NEXT STEPS (seg99)
+     ============================== -->
+     <section class="seg99-conclusionSection">
+      <div class="seg99-wrapper">
+        <h2 class="titlePurple99">Conclusion &amp; Next Steps</h2>
+        <p class="desc99">
+          By organizing Summit Care’s network around role-based VLANs and
+          subnets, documenting the IP scheme, separating management traffic,
+          and tying inter-VLAN communication back to firewall ACLs and secure
+          administration, the clinic now has a much clearer and safer internal
+          network structure. The next step is to continue into
+          <strong>Disaster Recovery &amp; Backup Plan</strong>, where this
+          segmented design supports recovery readiness, backup scope, and
+          restoration planning across the environment.
+        </p>
+        <!-- Navigation Buttons -->
+               <div class="bottomBtn85-group">
+              <button class="footer-primary-button" onclick="window.location.href='voip.html';">
+                Disaster Recovery &amp; Backup Plan
+              </button>
+              <button class="footer-secondary-button" id="return-to-top">
+                Return to Home
+              </button>
+            </div>
+        </div>
+      </div>
+    </section>
+  <!-- Minimal, Center-Aligned Footer -->
+  <footer class="subtle-footer">
+    <p>New York, New York</p>
+    <p>Design: Sidiq Daniel &copy; All rights reserved</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrading The Network</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+<!-- Background Wrapper -->
+  <div class="background-wrapper">
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+      Complete Networking Solutions by Sidiq Daniel
+    </div>
+<!-- Sticky Header -->
+<div class="sticky-header">
+  <div class="logo">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">
+      <img src="images/daters.png" alt="Logo" class="logo-image">
+    </a>
+    <a href="index.html" class="logo-text-link">Upgrading The Network</a>
+  </div>
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <nav class="dropdown-menu">
+    <ul>
+      <!-- Home Button -->
+      <li class="home-item">
+        <a href="index.html" class="home-link">Home</a>
+      </li>
+      <!-- Index Dropdown -->
+<li class="menu-item" onclick="toggleSubMenu()">
+    <span class="menu-title">Index <i class="arrow">&#x25BC;</i></span>
+    <ul class="sub-menu">
+        <li data-href="objectives.html">Company Objectives & Gap Analysis Overview</li>
+        <li data-href="assets.html">Assets & Inventory</li>
+        <li data-href="deploy.html">Procurement & Deployment</li>
+        <li data-href="diagrams.html">Network Diagrams & Topologies</li>
+        <li data-href="segmentation.html">Network Segmentation, VLAN'S, & Subnetting</li>
+        <li data-href="voip.html">VoIP Configuration</li>
+        <li data-href="cloud.html">Cloud Infrastructure & Software Defined Networking</li>
+        <li data-href="programming.html">Programming & API's</li>
+        <li data-href="cybersecurity.html">Cybersecurity Measures & Data Protection</li>
+        <li data-href="hippa.html">HIPPA Compliance, Regulation, & Risk</li>
+    </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+<section class="intro-section">
+    <div class="button-like">The Gold Standard</div>
+    <span class="star2">★ ★ ★ ★ ★</span>
+    <h1>Disaster Recovery & Backup Plan</h1>
+    <p>Planning Summit Care Medical Clinic’s recovery readiness with backup strategy, continuity safeguards, remote resilience, and restoration thinking across critical systems.</p>
+  
+  <!-- ===============================
+     SECTION 1: INTRODUCTION & PURPOSE (vo16)
+     =============================== -->
+<section class="vo16-introSection">
+    <div class="vo16-wrapper">
+      <h2 class="titleBlue16">Overview</h2>
+      <p class="desc16">
+        Summit Care’s disaster recovery and backup planning is designed around
+        one core goal: if a device fails, power is interrupted, data is
+        corrupted, or a system must be rebuilt, the clinic should still have a
+        clear path to recover operations without losing control of critical
+        infrastructure. Rather than depending on one copy of data or one copy
+        of configuration, the recovery model uses layered backups, documented
+        baselines, cloud visibility, and rebuild procedures that support both
+        day-to-day resilience and larger outage scenarios.
+      </p>
+      <ul class="vo16-highlightList">
+        <li><i class="fas fa-copy"></i> 3-2-1 backup planning across on-prem, NAS, and cloud locations</li>
+        <li><i class="fas fa-plug"></i> UPS-backed continuity for the server platform during power disruption</li>
+        <li><i class="fas fa-sync-alt"></i> Configuration exports, baseline rebuilds, and documented recovery paths for faster restoration</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- ===============================
+       SECTION 2: BACKUP STRATEGY (vo27)
+       =============================== -->
+  <section class="vo27-theorySection">
+    <div class="vo27-wrapper">
+      <h2 class="titleBlack27">3-2-1 Backup Strategy &amp; Recovery Layers</h2>
+      <p class="desc27">
+        Summit Care’s recovery planning follows a practical
+        <strong>3-2-1 backup model</strong>: maintain multiple copies of
+        important data, keep them on more than one kind of storage, and ensure
+        at least one copy lives outside the main production environment. That
+        model applies not only to data, but also to configuration exports,
+        documentation, and supporting recovery material.
+      </p>
+      <div class="vo27-cardGrid">
+        <div class="vo27-card">
+          <i class="fas fa-server vo27-icon"></i>
+          <h3>On-Prem Server Backup</h3>
+          <p>
+            Critical data is retained on the local server environment so
+            Summit Care keeps a nearby recovery copy for faster operational
+            restoration.
+          </p>
+        </div>
+        <div class="vo27-card">
+          <i class="fas fa-hdd vo27-icon"></i>
+          <h3>Synology NAS Copy</h3>
+          <p>
+            A <strong>Synology NAS</strong> with its own static IP acts as an
+            additional recovery layer for files, exports, and supporting
+            backup copies within the office environment.
+          </p>
+        </div>
+        <div class="vo27-card">
+          <i class="fas fa-cloud vo27-icon"></i>
+          <h3>Cloud Copy</h3>
+          <p>
+            Cloud storage through <strong>OneDrive</strong> and other managed
+            cloud-connected services provides an offsite copy for resilience if
+            local systems are impacted.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===============================
+       SECTION 3: SCHEDULED BACKUPS & DATA PROTECTION (vo39)
+       =============================== -->
+  <section class="vo39-infraSection">
+    <div class="vo39-wrapper">
+      <h2 class="titleBlue39">Scheduled Backups, Scripts &amp; Protected Data</h2>
+      <p class="desc39">
+        Backup operations are not left to chance. Summit Care uses scheduled
+        tasks and scripted routines to protect critical data on a recurring
+        basis, including core server data and application data that would be
+        difficult to recreate manually.
+      </p>
+      <ul class="vo39-pointsList">
+        <li><i class="fas fa-clock"></i> <strong>Daily scheduled backups</strong> run at approximately <strong>11:50 PM</strong> using scripts and Task Scheduler</li>
+        <li><i class="fas fa-save"></i> <strong>C drive backups</strong> protect the core server environment and supporting recovery files</li>
+        <li><i class="fas fa-database"></i> <strong>Practice Perfect database backups</strong> are included so business-critical clinic data can be restored if needed</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- ===============================
+       SECTION 4: POWER, UPTIME & CONTINUITY (vo41)
+       =============================== -->
+  <section class="vo41-securitySection">
+    <div class="vo41-wrapper">
+      <h2 class="titlePurple41">Power Resilience, Static IP &amp; Continuity Planning</h2>
+      <p class="desc41">
+        Disaster recovery is not only about restoring data after failure. It is
+        also about reducing the chance of unnecessary downtime in the first
+        place. Summit Care’s recovery posture includes power protection,
+        stable connectivity, and the network consistency needed to recover
+        services cleanly when interruptions do happen.
+      </p>
+      <div class="vo41-securityGrid">
+        <div class="vo41-card">
+          <i class="fas fa-battery-three-quarters vo41-icon"></i>
+          <h3>UPS Protection</h3>
+          <p>
+            The server platform is attached to a <strong>UPS</strong> so short
+            outages and unstable power events do not immediately take core
+            systems offline.
+          </p>
+        </div>
+        <div class="vo41-card">
+          <i class="fas fa-globe vo41-icon"></i>
+          <h3>Static IP Service</h3>
+          <p>
+            Summit Care uses a <strong>static IP</strong> from Verizon so remote
+            access, published services, and recovery-related connectivity remain
+            more predictable.
+          </p>
+        </div>
+        <div class="vo41-card">
+          <i class="fas fa-print vo41-icon"></i>
+          <h3>Static Infrastructure Devices</h3>
+          <p>
+            Devices such as the <strong>printer</strong> and
+            <strong>Synology NAS</strong> receive static IP assignments so
+            recovery documentation, shares, and support paths stay consistent.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===============================
+       SECTION 5: CONFIGURATION EXPORTS & REBUILD READINESS (vo52)
+       =============================== -->
+  <section class="vo52-qosSection">
+    <div class="vo52-wrapper">
+      <h2 class="titleBlue52">Configuration Backups &amp; Rebuild Readiness</h2>
+      <p class="desc52">
+        A recoverable environment needs more than data backups. It also needs
+        configuration exports, baseline files, and known-good records that let
+        IT rebuild services without guessing. Summit Care preserves those
+        recovery references across multiple storage locations.
+      </p>
+      <div class="vo52-qosGrid">
+        <div class="vo52-qosItem">
+          <h3><i class="fas fa-file-code"></i> Cisco &amp; Ubiquiti Exports</h3>
+          <p>
+            JSON and configuration export files for Cisco and Ubiquiti devices
+            are retained in multiple locations so switches, routers, access
+            points, and related settings can be restored faster.
+          </p>
+        </div>
+        <div class="vo52-qosItem">
+          <h3><i class="fas fa-book-open"></i> Baseline Documentation</h3>
+          <p>
+            Because baseline configurations, firewall rules, VPN notes, and
+            hostname/IP records are documented, the team can provision and
+            rebuild systems with more confidence.
+          </p>
+        </div>
+        <div class="vo52-qosItem">
+          <h3><i class="fas fa-tools"></i> Reprovisioning Path</h3>
+          <p>
+            If a workstation or system must be rebuilt, tools such as bootable
+            Windows media and standardized deployment methods help restore the
+            environment from a known configuration baseline.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===============================
+       SECTION 6: REDUNDANCY, MONITORING & ALERTING (vo67)
+       =============================== -->
+  <section class="vo67-redundancySection">
+    <div class="vo67-wrapper">
+      <h2 class="titleBlack67">Redundancy, Monitoring &amp; Alerting</h2>
+      <p class="desc67">
+        Recovery planning also includes the controls that help detect problems
+        early and maintain service continuity. Monitoring, failover, and cloud
+        visibility help Summit Care respond before an incident turns into a
+        larger outage.
+      </p>
+      <ul class="vo67-failList">
+        <li><i class="fas fa-random"></i> <strong>DHCP failover</strong> supports continuity if one DHCP path has an issue</li>
+        <li><i class="fas fa-bell"></i> <strong>SNMP alerting</strong> notifies IT staff and stakeholders by email when monitored failures occur</li>
+        <li><i class="fas fa-eye"></i> Cloud-connected visibility such as <strong>QuickConnect</strong> for the NAS and cloud management access for infrastructure improves remote response</li>
+      </ul>
+      <div class="vo67-diagramPlaceholder">
+        <i class="fas fa-project-diagram"></i>
+        <p>Diagram Placeholder: Backup Paths, Alerting Flow &amp; Recovery Architecture</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===============================
+       SECTION 7: RECOVERY PRIORITIES & RESTORATION ORDER (vo74)
+       =============================== -->
+  <section class="vo74-routingSection">
+    <div class="vo74-wrapper">
+      <h2 class="titlePurple74">Recovery Priorities &amp; Restoration Order</h2>
+      <p class="desc74">
+        In a real recovery event, Summit Care needs to know what comes back
+        first. The recovery plan therefore prioritizes core infrastructure
+        services before secondary convenience systems.
+      </p>
+      <div class="vo74-routeGrid">
+        <div class="vo74-routeItem">
+          <h3><i class="fas fa-server"></i> Core Services First</h3>
+          <ul>
+            <li>Restore the Proxmox host, Windows Server core services, and critical networking first</li>
+            <li>Re-establish DNS, DHCP, directory services, and remote management visibility</li>
+          </ul>
+        </div>
+        <div class="vo74-routeItem">
+          <h3><i class="fas fa-layer-group"></i> Rebuild Dependent Systems</h3>
+          <ul>
+            <li>Import saved configs for switches, routers, firewalls, wireless, and VPN services</li>
+            <li>Bring user systems and less critical services back online from the documented baseline</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===============================
+       SECTION 8: ACCESS SECURITY DURING RECOVERY (vo86)
+       =============================== -->
+  <section class="vo86-autoSection">
+    <div class="vo86-wrapper">
+      <h2 class="titleBlue86">Access Security During Recovery</h2>
+      <p class="desc86">
+        Recovery procedures should not weaken security. Even during an outage
+        or rebuild scenario, access to systems should remain controlled and
+        accountable so the clinic is not forced to trade security for speed.
+      </p>
+      <div class="vo86-autoCards">
+        <div class="vo86-autoCard">
+          <i class="fas fa-key vo86-icon"></i>
+          <h3>MFA &amp; Controlled Access</h3>
+          <p>
+            Multifactor authentication and controlled administrative access help
+            keep recovery portals, VPN entry points, and management systems from
+            becoming weak spots during urgent restoration work.
+          </p>
+        </div>
+        <div class="vo86-autoCard">
+          <i class="fas fa-user-shield vo86-icon"></i>
+          <h3>Documented Credentials</h3>
+          <p>
+            Credential handling, password manager usage, and VPN access details
+            should remain documented so recovery does not rely on undocumented
+            knowledge held by one person.
+          </p>
+        </div>
+        <div class="vo86-autoCard">
+          <i class="fas fa-history vo86-icon"></i>
+          <h3>Recovery Auditability</h3>
+          <p>
+            Because recovery actions are documented and monitored, the team can
+            review what changed during an outage response and tighten the
+            process over time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===============================
+       SECTION 9: DOCUMENTATION TIES & CLOUD VISIBILITY (vo91)
+       =============================== -->
+  <section class="vo91-complianceSection">
+    <div class="vo91-wrapper">
+      <h2 class="titleBlack91">Documentation Ties &amp; Cloud Visibility</h2>
+      <p class="desc91">
+        Recovery planning depends heavily on documentation. Summit Care’s
+        diagrams, topology records, hostname standards, VPN notes, and baseline
+        configuration documents all support faster restoration because the team
+        can verify what should exist and where it should live before rebuilding.
+      </p>
+      <div class="vo91-visualGraph">
+        <h3><i class="fas fa-cloud"></i> Recovery Visibility Snapshot</h3>
+        <div class="vo91-barTrack">
+          <div class="vo91-barFill" style="width: 88%;">
+            <span class="vo91-barText">88% Recovery Visibility Coverage</span>
+          </div>
+        </div>
+        <p class="desc91 subText">
+          Represents how much of the environment is designed to remain visible
+          through documentation, exported configs, cloud services, and
+          management tooling during a recovery event.
+        </p>
+      </div>
+      <ul class="vo91-list">
+        <li><i class="fas fa-clipboard-check"></i> Documentation and configs are stored in multiple places to support 3-2-1 recovery</li>
+        <li><i class="fas fa-hdd"></i> Synology QuickConnect improves access to NAS-backed recovery files when working remotely</li>
+        <li><i class="fas fa-wifi"></i> Cloud-linked infrastructure views help confirm status and speed up incident response</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- ===============================
+       SECTION 10: MAINTENANCE, TESTING & REVIEW (vo99)
+       =============================== -->
+  <section class="vo99-maintainSection">
+    <div class="vo99-wrapper">
+      <h2 class="titleBlue99">Maintenance, Testing &amp; Review</h2>
+      <p class="desc99">
+        A recovery plan is only useful if it is maintained. Backup jobs,
+        exported configurations, alerting, and restoration documentation should
+        be reviewed routinely so the clinic is not surprised by outdated files
+        or broken recovery paths when a real incident occurs.
+      </p>
+      <div class="vo99-tableWrap">
+        <table class="vo99-monitorTable">
+          <thead>
+            <tr>
+              <th>Recovery Control</th>
+              <th>Purpose</th>
+              <th>Expected Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scheduled Backup Jobs</td>
+              <td>Protect server volumes and application data on a daily basis</td>
+              <td>Confirm jobs complete and verify recoverability regularly</td>
+            </tr>
+            <tr>
+              <td>SNMP Monitoring</td>
+              <td>Detect outages, failures, or abnormal device behavior early</td>
+              <td>Email IT staff and stakeholders when thresholds are crossed</td>
+            </tr>
+            <tr>
+              <td>Configuration Export Review</td>
+              <td>Ensure switch, firewall, router, and AP configs remain current</td>
+              <td>Store and refresh copies across server, NAS, and cloud locations</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===============================
+       SECTION 11: CONCLUSION & NEXT STEPS (vo110)
+       =============================== -->
+       <section class="vo110-conclusionSection">
+        <div class="vo110-wrapper">
+            <h2 class="titleBlack110">Recovery Readiness For Summit Care</h2>
+            <p class="desc110">
+                By combining a 3-2-1 backup model, scheduled server and database
+                backups, UPS-backed continuity, exported infrastructure configs,
+                cloud-connected visibility, and documented rebuild baselines,
+                Summit Care gains a disaster recovery posture that is both
+                practical and supportable. The next phase is to continue that
+                resilience story through
+                <strong>Cybersecurity, Data Protection &amp; HIPAA Compliance</strong>,
+                where backup, access, monitoring, and recovery controls are tied
+                more directly to security, privacy, and regulated operations.
+            </p>
+            <!-- Buttons at the bottom -->
+            <div class="bottomBtn86-group">
+                <button class="footer-primary-button" onclick="window.location.href='cybersecurity.html';">
+                    Cybersecurity, Data Protection & HIPAA Compliance
+                </button>
+                <button class="footer-secondary-button" id="return-to-top">
+                    Return to Home
+                </button>
+            </div>
+    </div>
+  </section>
+  
+  </section>
+    <!-- Minimal, Center-Aligned Footer -->
+    <footer class="subtle-footer">
+      <p>New York, New York</p>
+      <p>Design: Sidiq Daniel &copy; All rights reserved</p>
+    </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

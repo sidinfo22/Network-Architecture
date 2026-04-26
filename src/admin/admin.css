@@ -1,0 +1,138 @@
+.admin-shell {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(11, 99, 206, 0.18), transparent 28%),
+    linear-gradient(180deg, #eef5ff 0%, #f7f9fc 100%);
+  color: #0f172a;
+}
+
+.admin-card {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.admin-login-card {
+  max-width: 520px;
+}
+
+.admin-eyebrow {
+  margin: 0 0 10px;
+  color: #0b63ce;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.admin-copy,
+.admin-helper {
+  color: #516074;
+  line-height: 1.6;
+}
+
+.admin-form {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.admin-form label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.admin-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  border-radius: 14px;
+  font: inherit;
+}
+
+.admin-button {
+  padding: 14px 18px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0b63ce, #084fa4);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-button-secondary {
+  background: linear-gradient(135deg, #172033, #28344c);
+}
+
+.admin-error {
+  color: #b42318;
+  font-weight: 600;
+}
+
+.admin-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.admin-stat-card {
+  padding: 18px;
+  border-radius: 18px;
+  background: #f8fbff;
+  border: 1px solid rgba(11, 99, 206, 0.08);
+}
+
+.admin-stat-card h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.admin-stat-card strong {
+  font-size: 26px;
+}
+
+.admin-section {
+  margin-top: 28px;
+}
+
+.admin-table-wrap {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  text-align: left;
+  vertical-align: top;
+}
+
+@media (max-width: 720px) {
+  .admin-card {
+    padding: 22px;
+  }
+
+  .admin-header-row {
+    flex-direction: column;
+  }
+}
