@@ -20,7 +20,7 @@ function updateMeta(page) {
     favicon.setAttribute('rel', 'icon');
     document.head.appendChild(favicon);
   }
-  favicon.setAttribute('href', '/site/images/daters.png');
+  favicon.setAttribute('href', `${import.meta.env.BASE_URL}site/images/daters.png`);
 }
 
 export function IframePage({ page }) {
@@ -28,7 +28,7 @@ export function IframePage({ page }) {
     updateMeta(page);
   }, [page]);
 
-  const src = `/site/${page.fileName}?v=restore-2`;
+  const src = `${import.meta.env.BASE_URL}site/${page.fileName}?v=restore-2`;
 
   return (
     <iframe
