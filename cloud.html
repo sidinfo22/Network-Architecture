@@ -718,6 +718,52 @@
         </div>
       </section>
 
+      <section class="cl81-migrationSection">
+        <div class="cl81-wrapper">
+          <h2 class="titleBlack81">Summit Care Hybrid Identity Expansion</h2>
+          <p class="desc81">
+            The Azure work also includes a complete hybrid identity model for
+            Summit Care. Local Active Directory remains the operational source
+            for clinic users, computers, DNS, DHCP, NPS, and Group Policy, while
+            Microsoft Entra ID extends that identity into Microsoft 365, Teams,
+            Outlook, MFA, password recovery, and cloud-side access governance.
+          </p>
+          <div class="cl81-stepList">
+            <div class="cl81-stepItem">
+              <div class="cl81-stepNumber">1</div>
+              <h3>UPN &amp; Domain Alignment</h3>
+              <p>
+                The public cloud sign-in domain is verified in Entra, the
+                matching UPN suffix is added to Active Directory, and users are
+                updated so staff can sign in with the same identity format across
+                local and Microsoft services.
+              </p>
+            </div>
+            <div class="cl81-stepItem">
+              <div class="cl81-stepNumber">2</div>
+              <h3>Entra Connect Sync</h3>
+              <p>
+                Microsoft Entra Connect Sync is planned around clean AD health,
+                stable DNS, selected OU synchronization, password hash sync,
+                password writeback, SSPR, and validation through Synchronization
+                Service Manager and the Entra admin center.
+              </p>
+            </div>
+            <div class="cl81-stepItem">
+              <div class="cl81-stepNumber">3</div>
+              <h3>Azure Identity Backbone</h3>
+              <p>
+                For multi-site growth, Summit Care can extend the model with an
+                Azure-hosted central identity domain, regional VPN hubs, Azure
+                VPN Gateway, conditional DNS forwarding, and one-way trust paths
+                that let authorized global users authenticate without flattening
+                every clinic into one broad trust boundary.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ===============================
            SECTION 9: CLOUD MONITORING & PERFORMANCE (cl95)
            =============================== -->

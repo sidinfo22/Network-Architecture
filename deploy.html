@@ -258,6 +258,16 @@
           to ensure minimal downtime and strict adherence to HIPAA standards. 
           This includes:
         </p>
+
+        <p class="desc85">
+          This Summit Care deployment also includes the Windows Server 2022
+          services that make the network operational: Active Directory Domain
+          Services, DNS, DHCP, NPS/RADIUS, certificate services, Group Policy,
+          and hypervisor-backed recovery. Domain controllers, NPS, CA, NAS,
+          SQL, WDS, firewall, switching, iDRAC, and management interfaces are
+          assigned documented static addresses or reservations so support work
+          starts from a known baseline.
+        </p>
     
         <ul class="deploy85-list">
           <li>
@@ -281,6 +291,20 @@
             <strong>Monitoring &amp; Optimization:</strong> Ongoing performance 
             tracking, system log audits, and routine firmware updates to maintain 
             compliance and maximize ROI.
+          </li>
+          <li>
+            <i class="fas fa-random listIcon85"></i>
+            <strong>DHCP Failover Workflow:</strong> Keeping Windows DHCP as the
+            primary authority for leases, DNS integration, reservations, and
+            daily visibility while staging a Cisco emergency DHCP pool with
+            non-overlapping ranges for outage-only continuity.
+          </li>
+          <li>
+            <i class="fas fa-wifi listIcon85"></i>
+            <strong>NPS &amp; Certificate-Based Access:</strong> Using AD groups,
+            NPS/RADIUS policies, computer certificates, and enterprise wireless
+            authentication so Summit Care can separate staff, guest, and
+            administrative access without relying on shared passwords.
           </li>
         </ul>
       </div>

@@ -55,11 +55,12 @@
           <a href="#assets">5. Assets, Inventory & Procurement</a>
           <a href="#documentation">6. Documentation, Diagrams & Topologies</a>
           <a href="#deployment">7. Infrastructure Deployment & Configurations</a>
-          <a href="#cloud">8. Hybrid Cloud Infrastructure & Scalability</a>
-          <a href="#segmentation">9. Network Segmentation, VLANs & Subnetting</a>
-          <a href="#security">10. Cybersecurity, Data Protection & HIPAA Compliance</a>
-          <a href="#recovery">11. Disaster Recovery & Backup Plan</a>
-          <a href="#conclusion">12. Conclusion</a>
+          <a href="#server-identity">8. Windows Server, DHCP Failover & Secure Access</a>
+          <a href="#cloud">9. Hybrid Cloud Infrastructure & Scalability</a>
+          <a href="#segmentation">10. Network Segmentation, VLANs & Subnetting</a>
+          <a href="#security">11. Cybersecurity, Data Protection & HIPAA Compliance</a>
+          <a href="#recovery">12. Disaster Recovery & Backup Plan</a>
+          <a href="#conclusion">13. Conclusion</a>
         </div>
       </section>
 
@@ -544,6 +545,77 @@
         </p>
       </section>
 
+      <section class="section" id="server-identity">
+        <div class="kicker">Section 7A</div>
+        <h2>Windows Server, DHCP Failover & Secure Access</h2>
+        <p class="lead">
+          The Summit Care architecture also includes a dedicated Windows Server
+          and DHCP continuity workflow. This part of the project ties the network
+          blueprint to real operational services: Active Directory, DNS, DHCP,
+          NPS/RADIUS, certificate services, Group Policy, hypervisor-backed VMs,
+          and documented failover behavior.
+        </p>
+        <h3>Windows Server 2022 Enterprise Foundation</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Service Area</th>
+              <th>Summit Care Implementation</th>
+              <th>Operational Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AD DS</td>
+              <td>Domain controllers, OUs, security groups, service accounts, and Group Policy</td>
+              <td>Centralized identity, onboarding, access removal, and workstation control</td>
+            </tr>
+            <tr>
+              <td>DNS</td>
+              <td>AD-integrated zones, internal records, service discovery, and forwarders</td>
+              <td>Reliable domain logon, internal application lookup, and troubleshooting clarity</td>
+            </tr>
+            <tr>
+              <td>DHCP</td>
+              <td>Windows scopes, exclusions, reservations, option 003 router, option 006 DNS, option 015 suffix</td>
+              <td>Predictable client addressing and fewer manual IP mistakes</td>
+            </tr>
+            <tr>
+              <td>NPS/RADIUS & AD CS</td>
+              <td>802.1X / WPA-Enterprise access, certificate templates, auto-enrollment, and RADIUS logs</td>
+              <td>Network access tied to trusted users, computers, and certificates</td>
+            </tr>
+            <tr>
+              <td>Hypervisor Platform</td>
+              <td>Proxmox / Hyper-V planning for DCs, NPS, CA, test clients, VDI, and service VMs</td>
+              <td>Cleaner backup, restore, testing, and infrastructure portability</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>DHCP Failover Workflow</h3>
+        <p>
+          Windows Server remains the primary DHCP and DNS authority because it
+          provides DHCP Manager visibility, reservations, domain-aware DNS behavior,
+          and a stronger administrative workflow. The continuity design stages a
+          Cisco emergency DHCP pool with a non-overlapping address range so clients
+          can receive basic network configuration if the Windows DHCP service or VM
+          is unavailable.
+        </p>
+        <ul class="workflow-list">
+          <li>Primary Windows DHCP scope serves normal office devices, printers, phones, VDI clients, and test systems.</li>
+          <li>Static and reserved infrastructure addresses are excluded for domain controllers, NAS, NPS, CA, SQL, WDS, firewall, switches, iDRAC, and management interfaces.</li>
+          <li>Cisco emergency DHCP remains disabled or tightly controlled during normal operations to avoid split authority.</li>
+          <li>When health checks or operational validation confirm the Windows path is down, the emergency pool can be enabled for outage coverage.</li>
+          <li>After Windows DHCP is restored, leases and DNS behavior are reviewed, emergency DHCP is disabled, and primary authority returns to Windows.</li>
+        </ul>
+        <div class="callout">
+          <strong>Design note:</strong> this is not presented as native Microsoft
+          DHCP failover between two Windows servers. It is a layered continuity
+          design that keeps Windows as the long-term source of truth while using
+          the Cisco edge as a temporary emergency bridge.
+        </div>
+      </section>
+
       <section class="section" id="cloud">
         <div class="kicker">Section 7</div>
         <h2>Hybrid Cloud Infrastructure & Scalability</h2>
@@ -606,6 +678,22 @@
           access, sync monitoring, and scalable Microsoft administration without overbuilding
           the first phase.
         </p>
+        <h3>Expanded Azure / Entra Architecture</h3>
+        <p>
+          The broader Summit Care hybrid cloud workflow also documents a scalable identity
+          architecture for additional clinic locations. In that model, Microsoft Entra ID
+          provides cloud identity governance for summitcare.org, while an Azure-hosted
+          central Active Directory domain can support global users, regional VPN hubs,
+          Azure VPN Gateway, conditional DNS forwarding, and one-way trust relationships
+          that preserve campus independence.
+        </p>
+        <ul class="workflow-list">
+          <li>Verify the public cloud domain in Microsoft Entra and align AD UPN suffixes for cleaner Microsoft 365 sign-in.</li>
+          <li>Prepare AD health with dcdiag, replication checks, DNS review, duplicate object cleanup, and OU scoping before sync.</li>
+          <li>Use password hash sync, password writeback, SSPR, MFA, Conditional Access, and RBAC to reduce credential and administration risk.</li>
+          <li>Plan regional Meraki VPN hubs and Azure VPN Gateway paths so identity traffic can reach Azure-hosted services without creating broad campus-to-campus trust.</li>
+          <li>Retain audit evidence through Entra sign-in logs, role assignment history, sync status review, and documented offboarding steps.</li>
+        </ul>
       </section>
 
       <section class="section" id="segmentation">
@@ -744,6 +832,45 @@
           security visibility, and the regulated handling expectations relevant to Summit
           Care’s environment.
         </p>
+        <h3>Risk Analysis & Penetration Testing Workflow</h3>
+        <p>
+          The Summit Care cybersecurity effort also includes a sanitized risk analysis
+          and penetration testing narrative for the same network. The testing scope
+          focuses on asset discovery, vulnerability assessment, controlled validation,
+          attack-path modeling, remediation planning, and retesting while avoiding
+          destructive production activity or exposure of real patient data.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Security Workstream</th>
+              <th>What Was Documented</th>
+              <th>Resulting Control Direction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Threat Modeling</td>
+              <td>Phishing, stolen credentials, ransomware, exposed management, weak remote access, and vendor misuse</td>
+              <td>MFA, Conditional Access, least privilege, phishing training, remote access hardening</td>
+            </tr>
+            <tr>
+              <td>Vulnerability Assessment</td>
+              <td>Nmap and Nessus/OpenVAS-style scans, manual validation, Windows logs, firewall logs, and Microsoft sign-in data</td>
+              <td>Patch SLAs, service reduction, management ACLs, secure baselines, and evidence-backed remediation</td>
+            </tr>
+            <tr>
+              <td>Penetration Testing Narrative</td>
+              <td>Domain admin exposure, weak SSH or network device management, portal injection risk, guest egress, and wireless boundaries</td>
+              <td>Privileged access separation, key-based administration, web testing, VLAN controls, and rogue DHCP protections</td>
+            </tr>
+            <tr>
+              <td>Risk Register</td>
+              <td>Likelihood, impact, data sensitivity, owner, mitigation, retest status, and residual risk</td>
+              <td>Prioritized remediation roadmap aligned to business and HIPAA-aware risk</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section class="section" id="recovery">
